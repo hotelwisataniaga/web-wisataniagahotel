@@ -38,20 +38,98 @@
 <!-- HEADER -->
 <header style="background:#fff; box-shadow:0 2px 5px rgba(0,0,0,0.1); padding:15px 20px; position:sticky; top:0; z-index:999;">
   <div style="max-width:1200px; margin:auto; display:flex; align-items:center; justify-content:space-between;">
-    <a href="#beranda" style="display:flex; align-items:center; text-decoration:none;">
+
+    <!-- LOGO -->
+    <a href="index.html">
       <img src="images/logo-wisataniaga.png" alt="Wisata Niaga Hotel" style="max-height:55px;">
     </a>
-    <nav style="display:flex; gap:25px; flex-wrap:wrap;">
-      <a href="#beranda" style="color:#0a7a2f; text-decoration:none; font-weight:600;">Beranda</a>
-      <a href="#kamar" style="color:#333; text-decoration:none; font-weight:600;">Kamar</a>
-      <a href="mice.html" style="color:#333; text-decoration:none; font-weight:600;">MICE</a>
-      <a href="cafe.html" style="color:#333; text-decoration:none; font-weight:600;">CAFE</a>
-      <a href="#fasilitas" style="color:#333; text-decoration:none; font-weight:600;">Fasilitas</a>
-      <a href="#lokasi" style="color:#333; text-decoration:none; font-weight:600;">Lokasi</a>
-      <a href="#kontak" style="color:#333; text-decoration:none; font-weight:600;">Kontak</a>
+
+    <!-- TOMBOL HAMBURGER - MUNCUL DI HP -->
+    <div class="menu-toggle" onclick="toggleMenu()" style="display:none; font-size:28px; color:#0a7a2f; cursor:pointer;">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- MENU NAVIGASI -->
+    <nav id="navbar">
+      <a href="index.html">Beranda</a>
+      <a href="index.html#kamar">Kamar</a>
+      <a href="mice.html">MICE</a>
+      <a href="cafe.html">CAFE</a>
+      <a href="index.html#fasilitas">Fasilitas</a>
+      <a href="index.html#lokasi">Lokasi</a>
+      <a href="index.html#kontak">Kontak</a>
     </nav>
   </div>
 </header>
+
+<style>
+  /* STYLE MENU DESKTOP */
+  #navbar { display:flex; gap:25px; }
+  #navbar a { color:#333; text-decoration:none; font-weight:600; font-size:15px; transition:0.3s; padding:5px 0; }
+  #navbar a:hover { color:#0a7a2f; }
+  #navbar a.active { color:#0a7a2f; border-bottom:2px solid #0a7a2f; } /* MENU AKTIF */
+
+  /* STYLE MENU HP */
+  @media (max-width: 992px) {
+   .menu-toggle { display:block!important; } /* Tampilkan 3 garis */
+
+    #navbar {
+      display:none; /* Sembunyikan dulu */
+      flex-direction:column;
+      position:absolute;
+      top:85px; /* Dibawah header */
+      left:0;
+      width:100%;
+      background:#fff;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+      padding:10px 0;
+      text-align:center;
+      animation: slideDown 0.3s ease;
+    }
+    #navbar.active { display:flex; } /* Muncul kalau diklik */
+    #navbar a { padding:14px 0; border-bottom:1px solid #f0f0f0; }
+    #navbar a.active { border-bottom:1px solid #0a7a2f; background:#f0fff4; } /* MENU AKTIF DI HP */
+    #navbar a:last-child { border-bottom:none; }
+  }
+
+  @keyframes slideDown {
+    from { opacity:0; transform: translateY(-10px); }
+    to { opacity:1; transform: translateY(0); }
+  }
+</style>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("navbar").classList.toggle("active");
+  }
+  function closeMenu() {
+    document.getElementById("navbar").classList.remove("active");
+  }
+
+  // 1. AUTO ACTIVE MENU BERDASARKAN HALAMAN
+  document.addEventListener('DOMContentLoaded', function() {
+    const links = document.querySelectorAll('#navbar a');
+    const currentUrl = window.location.pathname.split('/').pop(); // ambil nama file: index.html
+
+    links.forEach(link => {
+      const linkUrl = link.getAttribute('href').split('/').pop().split('#')[0]; // ambil nama file dari href
+      if (linkUrl === currentUrl || (currentUrl === '' && linkUrl === 'index.html')) {
+        link.classList.add('active');
+      }
+      // Tambah onclick untuk close menu di HP
+      link.setAttribute('onclick', 'closeMenu()');
+    });
+  });
+
+  // 2. TUTUP MENU KALAU KLIK DI LUAR
+  document.addEventListener('click', function(event) {
+    const navbar = document.getElementById('navbar');
+    const toggle = document.querySelector('.menu-toggle');
+    if (!navbar.contains(event.target) &&!toggle.contains(event.target)) {
+      navbar.classList.remove('active');
+    }
+  });
+</script>
 
 <!-- HERO -->
 <section id="beranda" style="background:url('images/hero.jpg') center/cover no-repeat; padding:120px 20px; color:#fff; text-align:center; position:relative;">
