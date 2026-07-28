@@ -50,7 +50,7 @@
 
   /* STYLE MENU HP */
   @media (max-width: 992px) {
-   .menu-toggle { display:block!important; } /* Tampilkan 3 garis */
+  .menu-toggle { display:block!important; } /* Tampilkan 3 garis */
 
     #navbar {
       display:none; /* Sembunyikan dulu */
@@ -126,11 +126,11 @@
   <div style="max-width:1000px; margin:auto; text-align:center;">
     <h2 style="color:#0a7a2f; font-size:32px; margin-bottom:20px; font-weight:700;">Ruang Pertemuan Eksklusif</h2>
     <p style="color:#555; font-size:16px; line-height:1.8;">
-      Dalam komitmen kami untuk memberikan layanan terbaik, Hotel Wisata Niaga menyediakan fasilitas ruang pertemuan eksklusif 
+      Dalam komitmen kami untuk memberikan layanan terbaik, Hotel Wisata Niaga menyediakan fasilitas ruang pertemuan eksklusif
       yang dirancang untuk memenuhi berbagai kebutuhan acara, baik berskala kecil maupun besar.
       <br><br>
-      Kami menawarkan <b>3 pilihan ruang meeting</b> dengan desain minimalis: 
-      <b>Nusantara Room, Bhineka Room, Garuda Room</b>. 
+      Kami menawarkan <b>3 pilihan ruang meeting</b> dengan desain minimalis:
+      <b>Nusantara Room, Bhineka Room, Garuda Room</b>.
       Masing-masing fleksibel dengan sekat yang bisa dibuka menjadi <b>Merdeka Hall</b>.
     </p>
   </div>
@@ -218,10 +218,11 @@
     </table>
   </div>
 </section>
+
 <!-- FOOTER -->
 <footer id="kontak" style="background:#0a7a2f; color:#fff; padding:50px 20px; text-align:center;">
   <div style="max-width:1200px; margin:auto; display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:40px; text-align:center;">
-    
+
     <!-- KOLOM 1: LOGO & ALAMAT -->
     <div>
       <img src="images/logo-wisataniaga.png" style="max-height:60px; margin:0 auto 15px; background:#fff; padding:8px; border-radius:5px; display:block;">
@@ -266,3 +267,73 @@
     © 2026 Wisata Niaga Hotel. All Rights Reserved.
   </div>
 </footer>
+
+<!-- TOMBOL WHATSAPP MELAYANG MICE 2 NOMOR -->
+<div class="wa-container">
+  <div class="wa-popup" id="waPopup">
+    <a href="https://wa.me/6282265003510?text=Halo%20Admin%20MICE%20Wisata%20Niaga%20Hotel%2C%20saya%20mau%20tanya%20paket%20meeting%20dan%20event%20ya" target="_blank">
+      <i class="fab fa-whatsapp"></i> Sales 1 - 0822 6500 3510
+    </a>
+    <a href="https://wa.me/6282265003511?text=Halo%20Admin%20MICE%20Wisata%20Niaga%20Hotel%2C%20saya%20mau%20tanya%20paket%20meeting%20dan%20event%20ya" target="_blank">
+      <i class="fab fa-whatsapp"></i> Sales 2 - 0822 6500 3511
+    </a>
+  </div>
+  
+  <button class="wa-float" onclick="toggleWaPopup()">
+    <i class="fab fa-whatsapp"></i>
+  </button>
+</div>
+
+<style>
+.wa-container { position: fixed; bottom: 25px; right: 25px; z-index: 1000; }
+.wa-float {
+  width: 60px; height: 60px; background-color: #25D366; color: #FFF; border-radius: 50px;
+  text-align: center; font-size: 32px; box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+  display: flex; align-items: center; justify-content: center; border: none; cursor: pointer;
+  transition: all 0.3s ease; animation: pulse 2s infinite;
+}
+.wa-float:hover { background-color: #20b954; transform: scale(1.1); }
+
+.wa-popup {
+  display: none; position: absolute; bottom: 70px; right: 0;
+  background: #fff; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  padding: 10px; width: 260px; animation: fadeIn 0.3s ease;
+}
+.wa-popup.active { display: block; }
+.wa-popup a {
+  display: flex; align-items: center; gap: 10px; padding: 12px;
+  color: #333; text-decoration: none; font-weight: 600; border-radius: 8px;
+  transition: 0.2s;
+}
+.wa-popup a:hover { background: #f0fff4; color: #0a7a2f; }
+.wa-popup a i { color: #25D366; font-size: 20px; }
+
+@keyframes pulse {
+ 0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+ 70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+ 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+@keyframes fadeIn { from { opacity:0; transform: translateY(10px); } to { opacity:1; transform: translateY(0); } }
+
+@media (max-width: 768px) {
+ .wa-container { bottom: 20px; right: 20px; }
+ .wa-float { width: 55px; height: 55px; font-size: 28px; }
+ .wa-popup { width: 240px; }
+}
+</style>
+
+<script>
+function toggleWaPopup() {
+  document.getElementById('waPopup').classList.toggle('active');
+}
+// Tutup kalau klik di luar
+document.addEventListener('click', function(e){
+  const container = document.querySelector('.wa-container');
+  if(!container.contains(e.target)){
+    document.getElementById('waPopup').classList.remove('active');
+  }
+});
+</script>
+
+</body>
+</html>

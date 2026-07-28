@@ -179,6 +179,43 @@
   </div>
   <div style="text-align:center; margin-top:40px; padding-top:20px; border-top:1px solid rgba(255,255,255,0.2);">© 2026 Wisata Niaga Hotel. All Rights Reserved.</div>
 </footer>
+<!-- TOMBOL WHATSAPP MELAYANG -->
+<a href="https://wa.me/6281395075858?text=Halo%20Wisata%20Niaga%20Hotel%2C%20saya%20mau%20tanya%20kamar%20dan%20reservasi%20ya" 
+   target="_blank" 
+   class="wa-float"
+   aria-label="Chat WhatsApp Wisata Niaga Hotel">
+  <i class="fab fa-whatsapp"></i>
+</a>
 
+<style>
+.wa-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25D366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 32px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  animation: pulse 2s infinite;
+}
+.wa-float:hover { background-color: #20b954; transform: scale(1.1); }
+@keyframes pulse {
+ 0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+ 70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+ 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+@media (max-width: 768px) {
+  .wa-float { width: 55px; height: 55px; font-size: 28px; bottom: 20px; right: 20px; }
+}
+</style>
 </body>
 </html>
