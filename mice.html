@@ -1,339 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-<link rel="canonical" href="https://wisataniagahotel.com/mice.html" />
-<meta name="description" content="Meeting Room, Ballroom & Wedding di Wisata Niaga Hotel Purwokerto. Kapasitas 30-200 Pax. Paket Halfday, Fullday, Fullboard.">
-<meta name="keywords" content="meeting room purwokerto, ballroom purwokerto, hotel meeting purwokerto, wisata niaga mice">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MICE - Meeting & Ballroom | Wisata Niaga Hotel Purwokerto</title>
-
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MICE Wisata Niaga Hotel | Meeting & Event Purwokerto</title>
+  <meta name="description" content="Meeting room, hall, dan paket MICE di Wisata Niaga Hotel Purwokerto. Kapasitas hingga 200 pax dengan pilihan paket fleksibel.">
+  <meta name="theme-color" content="#0a3b31">
+  <link rel="canonical" href="https://wisataniagahotel.com/mice.html">
+  <link rel="icon" href="images/favicon-32.png" sizes="32x32">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body style="font-family: 'Poppins', sans-serif;">
+<body>
+<a class="skip-link" href="#main">Lewati ke konten</a>
+<div class="top-strip"><div class="container"><span>Jl. Merdeka No. 5, Kranji, Purwokerto Timur</span><span>MICE Inquiry · <a href="tel:0281642333">(0281) 642333</a></span></div></div>
+<header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html"><img src="images/logo-wisataniaga.png" alt="Wisata Niaga Hotel"></a><button class="nav-toggle" type="button" aria-label="Buka menu" aria-controls="main-nav" aria-expanded="false"><span></span></button><nav class="nav" id="main-nav" aria-label="Navigasi utama"><a href="index.html">Beranda</a><a href="index.html#kamar">Kamar</a><a href="mice.html" aria-current="page">MICE</a><a href="cafe.html">WN Cafe</a><a href="index.html#fasilitas">Fasilitas</a><a href="index.html#lokasi">Lokasi</a><a class="nav-cta" data-inquiry="paket MICE" data-number="6282265003510" href="#">Tanya MICE</a></nav></div></header>
 
-<!-- HEADER -->
-<header style="background:#fff; box-shadow:0 2px 5px rgba(0,0,0,0.1); padding:15px 20px; position:sticky; top:0; z-index:999;">
-  <div style="max-width:1200px; margin:auto; display:flex; align-items:center; justify-content:space-between;">
+<main id="main">
+  <section class="page-hero">
+    <img src="images/meeting-room.jpg" alt="Merdeka Hall Wisata Niaga Hotel">
+    <div class="container page-hero-content"><div class="breadcrumb"><a href="index.html">Beranda</a><span>/</span><b>MICE</b></div><h1>Meet. Connect.<br>Make it happen.</h1><p>Ruang meeting fleksibel untuk rapat, gathering, wedding, hingga acara hingga 200 pax di pusat Purwokerto.</p><div class="hero-actions"><a class="btn btn-primary" data-inquiry="paket MICE" data-number="6282265003510" href="#">Minta penawaran</a><a class="btn btn-ghost" href="#kapasitas">Lihat kapasitas</a></div></div>
+  </section>
 
-    <!-- LOGO -->
-    <a href="index.html">
-      <img src="images/logo-wisataniaga.png" alt="Wisata Niaga Hotel" style="max-height:55px;">
-    </a>
-
-    <!-- TOMBOL HAMBURGER - MUNCUL DI HP -->
-    <div class="menu-toggle" onclick="toggleMenu()" style="display:none; font-size:28px; color:#0a7a2f; cursor:pointer;">
-      <i class="fas fa-bars"></i>
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal"><div><span class="eyebrow">Flexible meeting spaces</span><h2 class="section-title">Tiga ruang. Satu hall. Banyak kemungkinan.</h2></div><p class="section-lead">Nusantara Room, Bhineka Room, dan Garuda Room dapat digunakan terpisah atau dibuka menjadi Merdeka Hall untuk acara berskala lebih besar.</p></div>
+      <div class="metric-grid reveal"><div class="metric"><strong>3</strong><span>Ruang meeting</span></div><div class="metric"><strong>115.73 m²</strong><span>Merdeka Hall</span></div><div class="metric"><strong>200 Pax</strong><span>Kapasitas theater</span></div><div class="metric"><strong>100 Mbps</strong><span>Wi-Fi meeting</span></div></div>
     </div>
+  </section>
 
-    <!-- MENU NAVIGASI -->
-    <nav id="navbar">
-      <a href="index.html">Beranda</a>
-      <a href="index.html#kamar">Kamar</a>
-      <a href="mice.html">MICE</a>
-      <a href="cafe.html">CAFE</a>
-      <a href="index.html#fasilitas">Fasilitas</a>
-      <a href="index.html#lokasi">Lokasi</a>
-      <a href="index.html#kontak">Kontak</a>
-    </nav>
-  </div>
-</header>
-
-<style>
-  /* STYLE MENU DESKTOP */
-  #navbar { display:flex; gap:25px; }
-  #navbar a { color:#333; text-decoration:none; font-weight:600; font-size:15px; transition:0.3s; padding:5px 0; }
-  #navbar a:hover { color:#0a7a2f; }
-  #navbar a.active { color:#0a7a2f; border-bottom:2px solid #0a7a2f; } /* MENU AKTIF */
-
-  /* STYLE MENU HP */
-  @media (max-width: 992px) {
-  .menu-toggle { display:block!important; } /* Tampilkan 3 garis */
-
-    #navbar {
-      display:none; /* Sembunyikan dulu */
-      flex-direction:column;
-      position:absolute;
-      top:85px; /* Dibawah header */
-      left:0;
-      width:100%;
-      background:#fff;
-      box-shadow:0 4px 10px rgba(0,0,0,0.1);
-      padding:10px 0;
-      text-align:center;
-      animation: slideDown 0.3s ease;
-    }
-    #navbar.active { display:flex; } /* Muncul kalau diklik */
-    #navbar a { padding:14px 0; border-bottom:1px solid #f0f0f0; }
-    #navbar a.active { border-bottom:1px solid #0a7a2f; background:#f0fff4; } /* MENU AKTIF DI HP */
-    #navbar a:last-child { border-bottom:none; }
-  }
-
-  @keyframes slideDown {
-    from { opacity:0; transform: translateY(-10px); }
-    to { opacity:1; transform: translateY(0); }
-  }
-</style>
-
-<script>
-  function toggleMenu() {
-    document.getElementById("navbar").classList.toggle("active");
-  }
-  function closeMenu() {
-    document.getElementById("navbar").classList.remove("active");
-  }
-
-  // 1. AUTO ACTIVE MENU BERDASARKAN HALAMAN
-  document.addEventListener('DOMContentLoaded', function() {
-    const links = document.querySelectorAll('#navbar a');
-    const currentUrl = window.location.pathname.split('/').pop(); // ambil nama file: index.html
-
-    links.forEach(link => {
-      const linkUrl = link.getAttribute('href').split('/').pop().split('#')[0]; // ambil nama file dari href
-      if (linkUrl === currentUrl || (currentUrl === '' && linkUrl === 'index.html')) {
-        link.classList.add('active');
-      }
-      // Tambah onclick untuk close menu di HP
-      link.setAttribute('onclick', 'closeMenu()');
-    });
-  });
-
-  // 2. TUTUP MENU KALAU KLIK DI LUAR
-  document.addEventListener('click', function(event) {
-    const navbar = document.getElementById('navbar');
-    const toggle = document.querySelector('.menu-toggle');
-    if (!navbar.contains(event.target) &&!toggle.contains(event.target)) {
-      navbar.classList.remove('active');
-    }
-  });
-</script>
-
-<!-- BANNER MICE -->
-<section style="background:url('images/meeting-room.jpg') center/cover no-repeat; height:300px; position:relative;">
-  <div style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5);"></div>
-  <div style="position:relative; z-index:1; display:flex; align-items:center; justify-content:center; height:100%; color:#fff; text-align:center;">
-    <div>
-      <h1 style="font-size:42px; font-weight:800; margin-bottom:10px;">MICE</h1>
-      <p style="font-size:18px; font-weight:600;">MEETING, INCENTIVE, CONVENTION & EXHIBITION</p>
+  <section class="section section-soft" id="kapasitas">
+    <div class="container">
+      <div class="section-head reveal"><div><span class="eyebrow">Room capacity</span><h2 class="section-title">Pilih layout sesuai format acara.</h2></div><p class="section-lead">Kapasitas berikut mengikuti konfigurasi Theater, U-Shape, Classroom, dan Roundtable.</p></div>
+      <div class="table-wrap reveal"><table class="data-table"><thead><tr><th>Nama Ruangan</th><th>Luas</th><th>Theater</th><th>U-Shape</th><th>Classroom</th><th>Roundtable</th></tr></thead><tbody><tr><td><b>Nusantara Room</b></td><td>36.11 m²</td><td>50 Pax</td><td>24 Pax</td><td>24 Pax</td><td>24 Pax</td></tr><tr><td><b>Bhineka Room</b></td><td>36.11 m²</td><td>50 Pax</td><td>24 Pax</td><td>24 Pax</td><td>24 Pax</td></tr><tr><td><b>Garuda Room</b></td><td>37.63 m²</td><td>50 Pax</td><td>24 Pax</td><td>24 Pax</td><td>24 Pax</td></tr><tr class="highlight"><td>Merdeka Hall</td><td>115.73 m²</td><td>200 Pax</td><td>80 Pax</td><td>100 Pax</td><td>80 Pax</td></tr></tbody></table></div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- TENTANG MICE -->
-<section style="padding:60px 20px; background:#fff;">
-  <div style="max-width:1000px; margin:auto; text-align:center;">
-    <h2 style="color:#0a7a2f; font-size:32px; margin-bottom:20px; font-weight:700;">Ruang Pertemuan Eksklusif</h2>
-    <p style="color:#555; font-size:16px; line-height:1.8;">
-      Dalam komitmen kami untuk memberikan layanan terbaik, Hotel Wisata Niaga menyediakan fasilitas ruang pertemuan eksklusif
-      yang dirancang untuk memenuhi berbagai kebutuhan acara, baik berskala kecil maupun besar.
-      <br><br>
-      Kami menawarkan <b>3 pilihan ruang meeting</b> dengan desain minimalis:
-      <b>Nusantara Room, Bhineka Room, Garuda Room</b>.
-      Masing-masing fleksibel dengan sekat yang bisa dibuka menjadi <b>Merdeka Hall</b>.
-    </p>
-  </div>
-</section>
-
-<!-- TABEL KAPASITAS -->
-<section style="padding:60px 20px; background:#f8f8f8;">
-  <div style="max-width:1200px; margin:auto;">
-    <h2 style="text-align:center; color:#0a7a2f; font-size:32px; margin-bottom:30px; font-weight:700;">Kapasitas Ruangan</h2>
-    <div style="overflow-x:auto;">
-      <table style="width:100%; border-collapse:collapse; background:#fff; box-shadow:0 2px 10px rgba(0,0,0,0.08); border-radius:12px; overflow:hidden;">
-        <thead style="background:#0a7a2f; color:#fff;">
-          <tr>
-            <th style="padding:15px; text-align:left;">Nama Ruangan</th>
-            <th style="padding:15px; text-align:center;">Luas</th>
-            <th style="padding:15px; text-align:center;">Theater</th>
-            <th style="padding:15px; text-align:center;">U-Shape</th>
-            <th style="padding:15px; text-align:center;">Classroom</th>
-            <th style="padding:15px; text-align:center;">Roundtable</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td style="padding:12px; border-bottom:1px solid #eee; font-weight:600;">Nusantara Room</td><td style="padding:12px; border-bottom:1px solid #eee; text-align:center;">36.11 m²</td><td style="padding:12px; border-bottom:1px solid #eee; text-align:center;">50 Pax</td><td style="padding:12px; border-bottom:1px solid #eee; text-align:center;">24 Pax</td><td style="padding:12px; border-bottom:1px solid #eee; text-align:center;">24 Pax</td><td style="padding:12px; border-bottom:1px solid #eee; text-align:center;">24 Pax</td></tr>
-          <tr><td style="padding:12px; border-bottom:1px solid #eee; font-weight:600;">Bhineka Room</td><td style="padding:12px; border-bottom:1px solid #eee; text-align:center;">36.11 m²</td><td style="padding:12px; border-bottom:1px solid #eee; text-align:center;">50 Pax</td><td style="padding:12px; border-bottom:1px solid #eee; text-align:center;">24 Pax</td><td style="padding:12px; border-bottom:1px solid #eee; text-align:center;">24 Pax</td><td style="padding:12px; border-bottom:1px solid #eee; text-align:center;">24 Pax</td></tr>
-          <tr><td style="padding:12px; border-bottom:1px solid #eee; font-weight:600;">Garuda Room</td><td style="padding:12px; border-bottom:1px solid #eee; text-align:center;">37.63 m²</td><td style="padding:12px; border-bottom:1px solid #eee; text-align:center;">50 Pax</td><td style="padding:12px; border-bottom:1px solid #eee; text-align:center;">24 Pax</td><td style="padding:12px; border-bottom:1px solid #eee; text-align:center;">24 Pax</td><td style="padding:12px; border-bottom:1px solid #eee; text-align:center;">24 Pax</td></tr>
-          <tr style="background:#e8f5e9;"><td style="padding:12px; font-weight:700; color:#0a7a2f;">Merdeka Hall</td><td style="padding:12px; text-align:center; font-weight:700;">115.73 m²</td><td style="padding:12px; text-align:center; font-weight:700;">200 Pax</td><td style="padding:12px; text-align:center; font-weight:700;">80 Pax</td><td style="padding:12px; text-align:center; font-weight:700;">100 Pax</td><td style="padding:12px; text-align:center; font-weight:700;">80 Pax</td></tr>
-        </tbody>
-      </table>
+  <section class="section">
+    <div class="container split">
+      <div class="visual-card reveal"><img src="images/meeting-room.jpg" alt="Ruang meeting Wisata Niaga Hotel"><div class="badge"><strong>Ready for business</strong><span>Meeting, gathering, social event</span></div></div>
+      <div class="reveal"><span class="eyebrow">Included facilities</span><h2 class="section-title">Peralatan inti sudah tersedia.</h2><p class="section-lead">Ruang dirancang untuk mendukung presentasi, diskusi, dan acara dengan kebutuhan teknis dasar.</p><div class="check-list"><div class="check-item"><span class="check">✓</span><div><strong>Screen & Proyektor</strong><p>Untuk kebutuhan presentasi.</p></div></div><div class="check-item"><span class="check">✓</span><div><strong>Sound System & Microphone</strong><p>Mendukung komunikasi selama acara.</p></div></div><div class="check-item"><span class="check">✓</span><div><strong>Wi-Fi 100 Mbps</strong><p>Koneksi untuk kebutuhan meeting.</p></div></div><div class="check-item"><span class="check">✓</span><div><strong>AC, Air Mineral, Flip Chart & Stage</strong><p>Fasilitas penunjang ruang pertemuan.</p></div></div></div><div class="tag-list"><span class="tag">Birthday Party</span><span class="tag">Reuni</span><span class="tag">Wedding</span><span class="tag">Akikah</span><span class="tag">Khitanan</span><span class="tag">Lobby Garden ≤ 200 tamu</span></div></div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- FASILITAS & SOCIAL SPACE -->
-<section style="padding:60px 20px; background:#fff;">
-  <div style="max-width:1200px; margin:auto; display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:40px;">
-    <!-- Fasilitas -->
-    <div>
-      <h2 style="color:#0a7a2f; font-size:28px; margin-bottom:20px; font-weight:700;">Fasilitas Lengkap</h2>
-      <ul style="list-style:none; padding:0; font-size:15px; line-height:2;">
-        <li><i class="fa fa-check-circle" style="color:#0a7a2f; margin-right:8px;"></i> Screen & Proyektor</li>
-        <li><i class="fa fa-check-circle" style="color:#0a7a2f; margin-right:8px;"></i> Sound System & Microphone</li>
-        <li><i class="fa fa-check-circle" style="color:#0a7a2f; margin-right:8px;"></i> Wi-Fi 100mbps</li>
-        <li><i class="fa fa-check-circle" style="color:#0a7a2f; margin-right:8px;"></i> Air Conditioner</li>
-        <li><i class="fa fa-check-circle" style="color:#0a7a2f; margin-right:8px;"></i> Air Mineral & Flip Chart</li>
-        <li><i class="fa fa-check-circle" style="color:#0a7a2f; margin-right:8px;"></i> Stage</li>
-      </ul>
-    </div>
-    <!-- Social Space -->
-    <div>
-      <h2 style="color:#0a7a2f; font-size:28px; margin-bottom:20px; font-weight:700;">Social Space</h2>
-      <p style="color:#555; font-size:15px; line-height:1.8; margin-bottom:15px;">
-        Lebih dari sekadar ruang meeting. Cocok untuk:
-      </p>
-      <div style="display:flex; flex-wrap:wrap; gap:10px;">
-        <span style="background:#f0f0f0; padding:8px 14px; border-radius:20px; font-size:14px;">Birthday Party</span>
-        <span style="background:#f0f0f0; padding:8px 14px; border-radius:20px; font-size:14px;">Reuni</span>
-        <span style="background:#f0f0f0; padding:8px 14px; border-radius:20px; font-size:14px;">Wedding</span>
-        <span style="background:#f0f0f0; padding:8px 14px; border-radius:20px; font-size:14px;">Akikah</span>
-        <span style="background:#f0f0f0; padding:8px 14px; border-radius:20px; font-size:14px;">Khitanan</span>
-      </div>
-      <p style="color:#555; font-size:15px; line-height:1.8; margin-top:15px;">
-        <b>Lobby Garden</b> tersedia untuk acara semi outdoor hingga <b>200 tamu</b>.
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- PAKET MICE -->
-<section style="padding:60px 20px; background:#f8f8f8;">
-  <div style="max-width:1000px; margin:auto;">
-    <h2 style="text-align:center; color:#0a7a2f; font-size:32px; margin-bottom:30px; font-weight:700;">Paket MICE Fleksibel</h2>
-    <table style="width:100%; border-collapse:collapse; background:#fff; box-shadow:0 2px 10px rgba(0,0,0,0.08); border-radius:12px; overflow:hidden;">
-      <thead style="background:#0a7a2f; color:#fff;">
-        <tr><th style="padding:15px; text-align:left;">Paket</th><th style="padding:15px; text-align:left;">Keterangan</th></tr>
-      </thead>
-      <tbody>
-        <tr><td style="padding:12px; border-bottom:1px solid #eee; font-weight:600;">Venue Only</td><td style="padding:12px; border-bottom:1px solid #eee;">Ruangan 4 Jam</td></tr>
-        <tr><td style="padding:12px; border-bottom:1px solid #eee; font-weight:600;">Coffee Break Only</td><td style="padding:12px; border-bottom:1px solid #eee;">Ruangan 4 Jam + 1 Coffee Break</td></tr>
-        <tr><td style="padding:12px; border-bottom:1px solid #eee; font-weight:600;">Meal Only</td><td style="padding:12px; border-bottom:1px solid #eee;">Ruangan 4 Jam + 1 Meal</td></tr>
-        <tr><td style="padding:12px; border-bottom:1px solid #eee; font-weight:600;">Halfday</td><td style="padding:12px; border-bottom:1px solid #eee;">Ruangan 4 Jam + 1 Meal + 1 Coffee Break</td></tr>
-        <tr><td style="padding:12px; border-bottom:1px solid #eee; font-weight:600;">One Day</td><td style="padding:12px; border-bottom:1px solid #eee;">Ruangan 8 Jam + 1 Meal + 2 Coffee Break</td></tr>
-        <tr><td style="padding:12px; border-bottom:1px solid #eee; font-weight:600;">Full Day</td><td style="padding:12px; border-bottom:1px solid #eee;">Ruangan 12 Jam + 2 Meal + 2 Coffee Break</td></tr>
-        <tr><td style="padding:12px; font-weight:600; color:#0a7a2f;">Full Board</td><td style="padding:12px; color:#0a7a2f;">Ruangan 12 Jam + 2 Meal + 2 Coffee Break + Kamar</td></tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer id="kontak" style="background:#0a7a2f; color:#fff; padding:50px 20px; text-align:center;">
-  <div style="max-width:1200px; margin:auto; display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:40px; text-align:center;">
-
-    <!-- KOLOM 1: LOGO & ALAMAT -->
-    <div>
-      <img src="images/logo-wisataniaga.png" style="max-height:60px; margin:0 auto 15px; background:#fff; padding:8px; border-radius:5px; display:block;">
-      <p style="font-size:15px; line-height:1.8;">
-        Jl. Merdeka No. 5<br>
-        Kranji, Kec.Purwokerto Timur, Banyumas 53116<br>
-        Jawa Tengah
-      </p>
-    </div>
-
-    <!-- KOLOM 2: HUBUNGI & RESERVASI MICE -->
-    <div>
-      <h3 style="font-size:20px; font-weight:700; margin-bottom:15px;">Hubungi & Reservasi MICE</h3>
-      <p style="line-height:2; font-size:15px;">
-        <a href="tel:0281642333" style="color:#fff; text-decoration:none;">
-          <i class="fas fa-phone"></i> (0281) 642333
-        </a><br>
-        <a href="https://wa.me/6282265003510?text=Halo%20Wisata%20Niaga%20Hotel%2C%20saya%20mau%20tanya%20paket%20MICE" target="_blank" style="color:#fff; text-decoration:none;">
-          <i class="fab fa-whatsapp"></i> 0822-6500-3510
-        </a><br>
-        <a href="https://wa.me/6282265003511?text=Halo%20Wisata%20Niaga%20Hotel%2C%20saya%20mau%20tanya%20paket%20MICE" target="_blank" style="color:#fff; text-decoration:none;">
-          <i class="fab fa-whatsapp"></i> 0822-6500-3511
-        </a><br>
-        <a href="mailto:info@wisataniagahotel.com" style="color:#fff; text-decoration:none;">
-          <i class="fas fa-envelope"></i> info@wisataniagahotel.com
-        </a>
-      </p>
-    </div>
-
-    <!-- KOLOM 3: SOSIAL MEDIA -->
-    <div>
-      <h3 style="font-size:20px; font-weight:700; margin-bottom:15px;">Ikuti Kami</h3>
-      <div style="display:flex; gap:15px; font-size:22px; justify-content:center;">
-        <a href="https://www.facebook.com/share/18c9C1SMeD/" target="_blank" style="color:#fff;"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.instagram.com/wisataniagahotel?igsh=YXFkb3g4OTduOTZk" target="_blank" style="color:#fff;"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.tiktok.com/@wisataniaga.hotel" target="_blank" style="color:#fff;"><i class="fab fa-tiktok"></i></a>
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-head reveal"><div><span class="eyebrow">MICE packages</span><h2 class="section-title">Paket fleksibel, dari venue hingga full board.</h2></div><p class="section-lead">Pilih format sesuai durasi meeting dan kebutuhan konsumsi. Harga dan ketersediaan dikonfirmasi langsung oleh tim MICE.</p></div>
+      <div class="package-grid">
+        <article class="package reveal"><small>4 jam</small><h3>Venue Only</h3><p>Penggunaan ruangan selama 4 jam.</p><a class="btn btn-outline" data-inquiry="paket Venue Only MICE" data-number="6282265003510" href="#">Tanya paket</a></article>
+        <article class="package reveal"><small>4 jam</small><h3>Coffee Break Only</h3><p>Ruangan 4 jam + 1 coffee break.</p><a class="btn btn-outline" data-inquiry="paket Coffee Break Only MICE" data-number="6282265003510" href="#">Tanya paket</a></article>
+        <article class="package reveal"><small>4 jam</small><h3>Meal Only</h3><p>Ruangan 4 jam + 1 meal.</p><a class="btn btn-outline" data-inquiry="paket Meal Only MICE" data-number="6282265003510" href="#">Tanya paket</a></article>
+        <article class="package reveal"><small>4 jam</small><h3>Halfday</h3><p>Ruangan 4 jam + 1 meal + 1 coffee break.</p><a class="btn btn-outline" data-inquiry="paket Halfday MICE" data-number="6282265003510" href="#">Tanya paket</a></article>
+        <article class="package reveal"><small>8 jam</small><h3>One Day</h3><p>Ruangan 8 jam + 1 meal + 2 coffee break.</p><a class="btn btn-outline" data-inquiry="paket One Day MICE" data-number="6282265003510" href="#">Tanya paket</a></article>
+        <article class="package reveal"><small>12 jam</small><h3>Full Day</h3><p>Ruangan 12 jam + 2 meal + 2 coffee break.</p><a class="btn btn-outline" data-inquiry="paket Full Day MICE" data-number="6282265003510" href="#">Tanya paket</a></article>
+        <article class="package featured reveal"><small>Complete package</small><h3>Full Board</h3><p>Ruangan 12 jam + 2 meal + 2 coffee break + kamar.</p><a class="btn btn-primary" data-inquiry="paket Full Board MICE" data-number="6282265003510" href="#">Minta penawaran</a></article>
       </div>
     </div>
+  </section>
 
-  </div>
-  <div style="text-align:center; margin-top:40px; padding-top:20px; border-top:1px solid rgba(255,255,255,0.2); font-size:14px;">
-    © 2026 Wisata Niaga Hotel. All Rights Reserved.
-  </div>
-</footer>
+  <section class="section"><div class="container"><div class="cta-panel reveal"><div><h2>Planning an event in Purwokerto?</h2><p>Diskusikan jumlah tamu, layout, tanggal, dan paket dengan tim MICE Wisata Niaga Hotel.</p></div><div class="cta-actions"><a class="btn btn-primary" data-inquiry="reservasi dan paket MICE" data-number="6282265003510" href="#">WhatsApp 0822-6500-3510</a><a class="btn btn-ghost" target="_blank" rel="noopener" href="https://wa.me/6282265003511?text=Halo%20Wisata%20Niaga%20Hotel%2C%20saya%20ingin%20menanyakan%20paket%20MICE.">WhatsApp alternatif</a></div></div></div></section>
+</main>
 
-<!-- TOMBOL WHATSAPP MELAYANG MICE 2 NOMOR -->
-<div class="wa-container">
-  <div class="wa-popup" id="waPopup">
-    <a href="https://wa.me/6282265003510?text=Halo%20Admin%20MICE%20Wisata%20Niaga%20Hotel%2C%20saya%20mau%20tanya%20paket%20meeting%20dan%20event%20ya" target="_blank">
-      <i class="fab fa-whatsapp"></i> Sales 1 - 0822 6500 3510
-    </a>
-    <a href="https://wa.me/6282265003511?text=Halo%20Admin%20MICE%20Wisata%20Niaga%20Hotel%2C%20saya%20mau%20tanya%20paket%20meeting%20dan%20event%20ya" target="_blank">
-      <i class="fab fa-whatsapp"></i> Sales 2 - 0822 6500 3511
-    </a>
-  </div>
-  
-  <button class="wa-float" onclick="toggleWaPopup()">
-    <i class="fab fa-whatsapp"></i>
-  </button>
-</div>
-
-<style>
-.wa-container { position: fixed; bottom: 25px; right: 25px; z-index: 1000; }
-.wa-float {
-  width: 60px; height: 60px; background-color: #25D366; color: #FFF; border-radius: 50px;
-  text-align: center; font-size: 32px; box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
-  display: flex; align-items: center; justify-content: center; border: none; cursor: pointer;
-  transition: all 0.3s ease; animation: pulse 2s infinite;
-}
-.wa-float:hover { background-color: #20b954; transform: scale(1.1); }
-
-.wa-popup {
-  display: none; position: absolute; bottom: 70px; right: 0;
-  background: #fff; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-  padding: 10px; width: 260px; animation: fadeIn 0.3s ease;
-}
-.wa-popup.active { display: block; }
-.wa-popup a {
-  display: flex; align-items: center; gap: 10px; padding: 12px;
-  color: #333; text-decoration: none; font-weight: 600; border-radius: 8px;
-  transition: 0.2s;
-}
-.wa-popup a:hover { background: #f0fff4; color: #0a7a2f; }
-.wa-popup a i { color: #25D366; font-size: 20px; }
-
-@keyframes pulse {
- 0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
- 70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
- 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
-}
-@keyframes fadeIn { from { opacity:0; transform: translateY(10px); } to { opacity:1; transform: translateY(0); } }
-
-@media (max-width: 768px) {
- .wa-container { bottom: 20px; right: 20px; }
- .wa-float { width: 55px; height: 55px; font-size: 28px; }
- .wa-popup { width: 240px; }
-}
-</style>
-
-<script>
-function toggleWaPopup() {
-  document.getElementById('waPopup').classList.toggle('active');
-}
-// Tutup kalau klik di luar
-document.addEventListener('click', function(e){
-  const container = document.querySelector('.wa-container');
-  if(!container.contains(e.target)){
-    document.getElementById('waPopup').classList.remove('active');
-  }
-});
-</script>
-
+<footer class="site-footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><img src="images/logo-wisataniaga.png" alt="Wisata Niaga Hotel"><p>Meeting, event, dan akomodasi dalam satu lokasi di pusat Purwokerto.</p></div><div class="footer-col"><h3>Explore</h3><a href="index.html">Beranda</a><a href="index.html#kamar">Kamar</a><a href="cafe.html">WN Cafe</a><a href="index.html#lokasi">Lokasi</a></div><div class="footer-col"><h3>MICE Contact</h3><a href="tel:0281642333">(0281) 642333</a><a target="_blank" rel="noopener" href="https://wa.me/6282265003510">0822-6500-3510</a><a target="_blank" rel="noopener" href="https://wa.me/6282265003511">0822-6500-3511</a></div><div class="footer-col"><h3>Social</h3><a target="_blank" rel="noopener" href="https://www.instagram.com/wisataniagahotel?igsh=YXFkb3g4OTduOTZk">Instagram</a><a target="_blank" rel="noopener" href="https://www.facebook.com/share/18c9C1SMeD/">Facebook</a><a target="_blank" rel="noopener" href="https://www.tiktok.com/@wisataniaga.hotel">TikTok</a></div></div><div class="footer-bottom"><span>© 2026 Wisata Niaga Hotel. All Rights Reserved.</span><span>Jl. Merdeka No. 5, Purwokerto</span></div></div></footer>
+<a class="mobile-book" data-inquiry="paket MICE" data-number="6282265003510" href="#">Tanya MICE via WhatsApp</a>
+<script src="js/script.js" defer></script>
 </body>
 </html>

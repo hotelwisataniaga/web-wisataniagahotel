@@ -1,222 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-<link rel="canonical" href="https://wisataniagahotel.com/cafe.html" />
-<meta name="description" content="WN Cafe Wisata Niaga Hotel Purwokerto. Buka 24 Jam. Breakfast Buffet 06.00-10.00. Menu Nusantara, Western, Pizza, Coffee.">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WN CAFE - Wisata Niaga Hotel Purwokerto</title>
-
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WN Cafe Purwokerto | 24 Jam - Wisata Niaga Hotel</title>
+  <meta name="description" content="WN Cafe di Wisata Niaga Hotel Purwokerto buka 24 jam. Breakfast buffet 06.00-10.00 dan menu a la carte Indonesia, Asia, Western, pizza, coffee, dan lainnya.">
+  <meta name="theme-color" content="#0a3b31">
+  <link rel="canonical" href="https://wisataniagahotel.com/cafe.html">
+  <link rel="icon" href="images/favicon-32.png" sizes="32x32">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body style="font-family: 'Poppins', sans-serif;">
+<body>
+<a class="skip-link" href="#main">Lewati ke konten</a>
+<div class="top-strip"><div class="container"><span>WN Cafe · Wisata Niaga Hotel</span><span>Buka 24 Jam · <a href="tel:0281642333">(0281) 642333</a></span></div></div>
+<header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html"><img src="images/logo-wisataniaga.png" alt="Wisata Niaga Hotel"></a><button class="nav-toggle" type="button" aria-label="Buka menu" aria-controls="main-nav" aria-expanded="false"><span></span></button><nav class="nav" id="main-nav" aria-label="Navigasi utama"><a href="index.html">Beranda</a><a href="index.html#kamar">Kamar</a><a href="mice.html">MICE</a><a href="cafe.html" aria-current="page">WN Cafe</a><a href="index.html#fasilitas">Fasilitas</a><a href="index.html#lokasi">Lokasi</a><a class="nav-cta" target="_blank" rel="noopener" href="https://wa.me/6281395075858?text=Halo%20WN%20Cafe%2C%20saya%20ingin%20bertanya.">Hubungi Cafe</a></nav></div></header>
 
-<!-- HEADER -->
-<header style="background:#fff; box-shadow:0 2px 5px rgba(0,0,0,0.1); padding:15px 20px; position:sticky; top:0; z-index:999;">
-  <div style="max-width:1200px; margin:auto; display:flex; align-items:center; justify-content:space-between;">
+<main id="main">
+  <section class="page-hero">
+    <img src="images/cafe.jpg" alt="Interior WN Cafe Wisata Niaga Hotel">
+    <div class="container page-hero-content"><div class="breadcrumb"><a href="index.html">Beranda</a><span>/</span><b>WN Cafe</b></div><h1>Good food.<br>Anytime.</h1><p>WN Cafe hadir 24 jam di samping lobi Wisata Niaga Hotel, dari breakfast buffet pagi hingga menu a la carte sepanjang hari.</p><div class="hero-actions"><a class="btn btn-primary" href="#menu">Explore menu</a><a class="btn btn-ghost" href="pdf/menu-wncafe.pdf" target="_blank" rel="noopener">Buka menu PDF</a></div></div>
+  </section>
 
-    <!-- LOGO -->
-    <a href="index.html">
-      <img src="images/logo-wisataniaga.png" alt="Wisata Niaga Hotel" style="max-height:55px;">
-    </a>
-
-    <!-- TOMBOL HAMBURGER - MUNCUL DI HP -->
-    <div class="menu-toggle" onclick="toggleMenu()" style="display:none; font-size:28px; color:#0a7a2f; cursor:pointer;">
-      <i class="fas fa-bars"></i>
+  <section class="section">
+    <div class="container cafe-intro-grid">
+      <div class="cafe-photo reveal"><img src="images/wn-cafe-interior.jpg" alt="Area duduk WN Cafe" loading="lazy"></div>
+      <div class="cafe-info reveal"><div><span class="eyebrow">Open around the clock</span><h2>24 jam, dari sarapan sampai late-night bite.</h2><p>Mulai hari dengan breakfast buffet all you can eat, lalu lanjutkan dengan pilihan a la carte Indonesia, Asia, Western, pizza, minuman, dan lainnya.</p></div><div class="hours"><div class="hour-row"><span>Daily Operation</span><span>24 Jam</span></div><div class="hour-row"><span>Breakfast Buffet</span><span>06.00 - 10.00</span></div><div class="hour-row"><span>After Breakfast</span><span>A la carte</span></div></div></div>
     </div>
+    <div class="container photo-grid reveal"><img src="images/cafe.jpg" alt="WN Cafe area utama" loading="lazy"><img src="images/wn-cafe-interior.jpg" alt="WN Cafe seating area" loading="lazy"></div>
+  </section>
 
-    <!-- MENU NAVIGASI -->
-    <nav id="navbar">
-      <a href="index.html">Beranda</a>
-      <a href="index.html#kamar">Kamar</a>
-      <a href="mice.html">MICE</a>
-      <a href="cafe.html">CAFE</a>
-      <a href="index.html#fasilitas">Fasilitas</a>
-      <a href="index.html#lokasi">Lokasi</a>
-      <a href="index.html#kontak">Kontak</a>
-    </nav>
-  </div>
-</header>
-
-<style>
-  /* STYLE MENU DESKTOP */
-  #navbar { display:flex; gap:25px; }
-  #navbar a { color:#333; text-decoration:none; font-weight:600; font-size:15px; transition:0.3s; padding:5px 0; }
-  #navbar a:hover { color:#0a7a2f; }
-  #navbar a.active { color:#0a7a2f; border-bottom:2px solid #0a7a2f; } /* MENU AKTIF */
-
-  /* STYLE MENU HP */
-  @media (max-width: 992px) {
-   .menu-toggle { display:block!important; } /* Tampilkan 3 garis */
-
-    #navbar {
-      display:none; /* Sembunyikan dulu */
-      flex-direction:column;
-      position:absolute;
-      top:85px; /* Dibawah header */
-      left:0;
-      width:100%;
-      background:#fff;
-      box-shadow:0 4px 10px rgba(0,0,0,0.1);
-      padding:10px 0;
-      text-align:center;
-      animation: slideDown 0.3s ease;
-    }
-    #navbar.active { display:flex; } /* Muncul kalau diklik */
-    #navbar a { padding:14px 0; border-bottom:1px solid #f0f0f0; }
-    #navbar a.active { border-bottom:1px solid #0a7a2f; background:#f0fff4; } /* MENU AKTIF DI HP */
-    #navbar a:last-child { border-bottom:none; }
-  }
-
-  @keyframes slideDown {
-    from { opacity:0; transform: translateY(-10px); }
-    to { opacity:1; transform: translateY(0); }
-  }
-</style>
-
-<script>
-  function toggleMenu() {
-    document.getElementById("navbar").classList.toggle("active");
-  }
-  function closeMenu() {
-    document.getElementById("navbar").classList.remove("active");
-  }
-
-  // 1. AUTO ACTIVE MENU BERDASARKAN HALAMAN
-  document.addEventListener('DOMContentLoaded', function() {
-    const links = document.querySelectorAll('#navbar a');
-    const currentUrl = window.location.pathname.split('/').pop(); // ambil nama file: index.html
-
-    links.forEach(link => {
-      const linkUrl = link.getAttribute('href').split('/').pop().split('#')[0]; // ambil nama file dari href
-      if (linkUrl === currentUrl || (currentUrl === '' && linkUrl === 'index.html')) {
-        link.classList.add('active');
-      }
-      // Tambah onclick untuk close menu di HP
-      link.setAttribute('onclick', 'closeMenu()');
-    });
-  });
-
-  // 2. TUTUP MENU KALAU KLIK DI LUAR
-  document.addEventListener('click', function(event) {
-    const navbar = document.getElementById('navbar');
-    const toggle = document.querySelector('.menu-toggle');
-    if (!navbar.contains(event.target) &&!toggle.contains(event.target)) {
-      navbar.classList.remove('active');
-    }
-  });
-</script>
-
-<!-- BANNER CAFE 300PX -->
-<section style="background:url('images/cafe.jpg') center/cover no-repeat; height:300px; position:relative; display:flex; align-items:center; justify-content:center;">
-  <div style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5);"></div>
-  <div style="position:relative; z-index:1; color:#fff; text-align:center;">
-    <h1 style="font-size:42px; font-weight:800; margin-bottom:10px;">WN CAFE</h1>
-    <p style="font-size:18px; font-weight:600; margin-bottom:20px;">Buka 24 Jam Nonstop</p>
-    <!-- TOMBOL PDF -->
-    <a href="pdf/menu-wncafe.pdf" target="_blank" style="display:inline-block; background:#d4a017; color:#fff; padding:12px 30px; border-radius:8px; text-decoration:none; font-weight:700; font-size:15px;">
-      <i class="fas fa-file-pdf"></i> Lihat Menu Lengkap PDF
-    </a>
-  </div>
-</section>
-
-<!-- TENTANG CAFE -->
-<section style="padding:60px 20px; background:#fff;">
-  <div style="max-width:1000px; margin:auto;">
-    <h2 style="text-align:center; color:#0a7a2f; font-size:32px; margin-bottom:20px; font-weight:700;">Tempat</h2>
-    <p style="color:#555; font-size:16px; line-height:1.8; text-align:center; margin-bottom:40px;">
-      Terletak tepat di samping lobi Wisata Niaga Hotel, WN Cafe hadir 24 jam nonstop untuk memanjakan selera Anda kapan pun dibutuhkan.
-      <br><br>
-      Mulai hari Anda dengan <b>sarapan buffet all you can eat</b> setiap pukul <b>06.00 – 10.00</b> pagi. Sajian lengkap: sup hangat, aneka nasi, main course, dessert, roti segar, jajanan pasar, bubur ayam, nasi uduk, pecel khas Purwokerto, egg corner, salad, hingga <b>Indomie Corner</b> favorit!
-      <br><br>
-      Setelah pukul 10.00 pagi, WN Cafe siap dengan pilihan menu <b>a la carte</b>: masakan khas Indonesia, Asia, hingga Western. 
-    </p>
-
-    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:30px; margin-bottom:40px;">
-      <div style="background:#f8f8f8; padding:25px; border-radius:12px;">
-        <h3 style="color:#0a7a2f; font-size:20px; margin-bottom:15px;"><i class="fas fa-clock"></i> Jam Operasional</h3>
-        <p><b>Daily</b> : 24 Jam Operasional</p>
-        <p><b>Breakfast</b> : 06.00 - 10.00</p>
+  <section class="section section-soft" id="menu">
+    <div class="container">
+      <div class="section-head reveal"><div><span class="eyebrow">Menu overview</span><h2 class="section-title">Banyak pilihan, satu tempat.</h2></div><p class="section-lead">Kategori berikut merangkum menu WN Cafe. Untuk daftar lengkap, buka PDF menu.</p></div>
+      <div class="menu-grid">
+        <article class="menu-card reveal"><h3>Nasi Goreng</h3><p>Spesial WN, Ayam, Pete, Iga Sapi, Seafood, Hongkong, dan pilihan lainnya.</p></article>
+        <article class="menu-card reveal"><h3>Nusantara</h3><p>Sup Buntut, Rendang, Soto Sokaraja, Rawon, Kwetiau, dan menu lokal lainnya.</p></article>
+        <article class="menu-card reveal"><h3>Omelette, Mie & Pasta</h3><p>Classic Omelette, Mie Jawa, Bakmi, Ramen, Spaghetti, Carbonara, dan Bolognese.</p></article>
+        <article class="menu-card reveal"><h3>Pizza & Western</h3><p>Cheesy Bite, Meat Lover, BBQ Chicken, Lahmacun, Chicken Steak, dan Beef Steak.</p></article>
+        <article class="menu-card reveal"><h3>Asian, Ayam & Sapi</h3><p>Beragam paket Asian, ayam, sapi, rice bowl, dan menu berkuah atau tumisan.</p></article>
+        <article class="menu-card reveal"><h3>Seafood & Ikan</h3><p>Salmon, udang, gurami, dan berbagai olahan seafood.</p></article>
+        <article class="menu-card reveal"><h3>Sayur, Tahu & Soup</h3><p>Capcai, kangkung, pokcoy, brokoli, sapo tahu, cream soup, tomyam, dan lainnya.</p></article>
+        <article class="menu-card reveal"><h3>Snack & Kudapan</h3><p>WN Sampler, wonton, toast, jamur crispy, mendoan, chicken wings, fries, dan dessert ringan.</p></article>
+        <article class="menu-card reveal"><h3>Drink & Dessert</h3><p>Juice, smoothie, milkshake, ice cream, coffee, serta pilihan minuman lainnya.</p></article>
       </div>
-      <div style="background:#f8f8f8; padding:25px; border-radius:12px;">
-        <h3 style="color:#0a7a2f; font-size:20px; margin-bottom:15px;"><i class="fas fa-concierge-bell"></i> Pelayanan</h3>
-        <p>• All You Can Eat Breakfast</p>
-        <p>• A la carte Dine In</p>
-        <p>• Take Away</p>
-        <p>• In Room Dining</p>
-      </div>
+      <div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:34px" class="reveal"><a class="btn btn-green" href="pdf/menu-wncafe.pdf" target="_blank" rel="noopener">Lihat menu lengkap PDF</a><a class="btn btn-outline" target="_blank" rel="noopener" href="https://wa.me/6281395075858?text=Halo%20WN%20Cafe%2C%20saya%20ingin%20bertanya%20tentang%20menu.">Tanya WN Cafe</a></div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- DAFTAR MENU SINGKAT -->
-<section style="padding:60px 20px; background:#f8f8f8;">
-  <div style="max-width:1200px; margin:auto;">
-    <h2 style="text-align:center; color:#0a7a2f; font-size:32px; margin-bottom:20px; font-weight:700;">Menu Kategori</h2>
-    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:25px;">
-      <div style="background:#fff; padding:20px; border-radius:12px;"><h3 style="color:#0a7a2f; font-size:18px;">Nasi Goreng</h3><p style="font-size:14px;">Spesial WN, Ayam, Pete, Iga Sapi, Seafood, Hongkong</p></div>
-      <div style="background:#fff; padding:20px; border-radius:12px;"><h3 style="color:#0a7a2f; font-size:18px;">Nusantara</h3><p style="font-size:14px;">Sup Buntut, Rendang, Soto Sokaraja, Kwetiau, Rawon</p></div>
-      <div style="background:#fff; padding:20px; border-radius:12px;"><h3 style="color:#0a7a2f; font-size:18px;">Pasta & Western</h3><p style="font-size:14px;">Spaghetti, Carbonara, Chicken Steak, Beef Steak</p></div>
-      <div style="background:#fff; padding:20px; border-radius:12px;"><h3 style="color:#0a7a2f; font-size:18px;">Pizza</h3><p style="font-size:14px;">Cheesy Bite, Meat Lover, BBQ Chicken, Lahmacun</p></div>
-      <div style="background:#fff; padding:20px; border-radius:12px;"><h3 style="color:#0a7a2f; font-size:18px;">Seafood</h3><p style="font-size:14px;">Salmon Teriyaki, Udang Mentega, Gurami Rica</p></div>
-      <div style="background:#fff; padding:20px; border-radius:12px;"><h3 style="color:#0a7a2f; font-size:18px;">Drink</h3><p style="font-size:14px;">Juice, Smoothie, Milkshake, Coffee, Beer, Wine</p></div>
+  <section class="section">
+    <div class="container split">
+      <div class="reveal"><span class="eyebrow">Service options</span><h2 class="section-title">Dine in, take away, atau makan di kamar.</h2><p class="section-lead">WN Cafe melayani beberapa pilihan menikmati menu sesuai kebutuhan tamu hotel maupun pengunjung.</p><div class="check-list"><div class="check-item"><span class="check">✓</span><div><strong>All You Can Eat Breakfast</strong><p>Breakfast buffet setiap pukul 06.00 - 10.00.</p></div></div><div class="check-item"><span class="check">✓</span><div><strong>A la carte Dine In</strong><p>Menu tersedia setelah waktu breakfast.</p></div></div><div class="check-item"><span class="check">✓</span><div><strong>Take Away</strong><p>Pesan untuk dibawa pulang.</p></div></div><div class="check-item"><span class="check">✓</span><div><strong>In Room Dining</strong><p>Pelayanan menu untuk tamu di kamar.</p></div></div></div></div>
+      <div class="visual-card reveal"><img src="images/cafe.jpg" alt="WN Cafe Wisata Niaga Hotel"><div class="badge"><strong>WN Cafe</strong><span>Tepat di samping lobi hotel</span></div></div>
     </div>
-    <div style="text-align:center; margin-top:30px;">
-      <a href="pdf/menu-wncafe.pdf" target="_blank" style="display:inline-block; background:#0a7a2f; color:#fff; padding:12px 30px; border-radius:8px; text-decoration:none; font-weight:700;">
-        <i class="fas fa-download"></i> Download Menu Lengkap PDF
-      </a>
-    </div>
-  </div>
-</section>
-<!-- FOOTER -->
-<footer id="kontak" style="background:#0a7a2f; color:#fff; padding:50px 20px; text-align:center;">
-  <div style="max-width:1200px; margin:auto; display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:40px;">
-    <div><img src="images/logo-wisataniaga.png" style="max-height:60px; margin:0 auto 15px; background:#fff; padding:8px; border-radius:5px;"><p>Jl. Merdeka No. 5<br>Kranji, Purwokerto Timur, Banyumas 53116<br>Jawa Tengah</p></div>
-    <div><h3 style="font-size:20px; font-weight:700; margin-bottom:15px;">Hubungi WN Cafe</h3><p style="line-height:2;"><a href="tel:0281642333" style="color:#fff; text-decoration:none;"><i class="fas fa-phone"></i> (0281) 642333</a><br><a href="https://wa.me/6281395075858" target="_blank" style="color:#fff; text-decoration:none;"><i class="fab fa-whatsapp"></i> 0813-9507-5858</a><br><a href="mailto:info@wisataniagahotel.com" style="color:#fff; text-decoration:none;"><i class="fas fa-envelope"></i> info@wisataniagahotel.com</a></p></div>
-    <div><h3 style="font-size:20px; font-weight:700; margin-bottom:15px;">Ikuti Kami</h3><div style="display:flex; gap:15px; font-size:22px; justify-content:center;"><a href="#" style="color:#fff;"><i class="fab fa-facebook"></i></a><a href="#" style="color:#fff;"><i class="fab fa-instagram"></i></a><a href="#" style="color:#fff;"><i class="fab fa-tiktok"></i></a></div></div>
-  </div>
-  <div style="text-align:center; margin-top:40px; padding-top:20px; border-top:1px solid rgba(255,255,255,0.2);">© 2026 Wisata Niaga Hotel. All Rights Reserved.</div>
-</footer>
-<!-- TOMBOL WHATSAPP MELAYANG CAFE -->
-<a href="https://wa.me/6281395075858?text=Halo%20WN%20Cafe%2C%20saya%20mau%20tanya%20menu%20dan%20reservasi%20meja%20ya" 
-   target="_blank" 
-   class="wa-float"
-   aria-label="Chat WhatsApp Cafe Wisata Niaga Hotel">
-  <i class="fab fa-whatsapp"></i>
-</a>
+  </section>
 
-<style>
-.wa-float {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 25px;
-  right: 25px;
-  background-color: #25D366;
-  color: #FFF;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 32px;
-  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-  animation: pulse 2s infinite;
-  text-decoration: none;
-}
-.wa-float:hover { background-color: #20b954; transform: scale(1.1); }
-@keyframes pulse {
- 0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
- 70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
- 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
-}
-@media (max-width: 768px) {
-  .wa-float { width: 55px; height: 55px; font-size: 28px; bottom: 20px; right: 20px; }
-}
-</style>
+  <section class="section section-soft"><div class="container"><div class="cta-panel reveal"><div><h2>Hungry now? WN Cafe is open.</h2><p>Hubungi WN Cafe untuk pertanyaan menu, take away, atau informasi pelayanan.</p></div><div class="cta-actions"><a class="btn btn-primary" target="_blank" rel="noopener" href="https://wa.me/6281395075858?text=Halo%20WN%20Cafe%2C%20saya%20ingin%20bertanya.">WhatsApp 0813-9507-5858</a><a class="btn btn-ghost" href="tel:0281642333">Telepon hotel</a></div></div></div></section>
+</main>
+
+<footer class="site-footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><img src="images/logo-wisataniaga.png" alt="Wisata Niaga Hotel"><p>WN Cafe di Wisata Niaga Hotel, Purwokerto. Buka 24 jam untuk breakfast, dine in, take away, dan in-room dining.</p></div><div class="footer-col"><h3>Explore</h3><a href="index.html">Beranda</a><a href="index.html#kamar">Kamar</a><a href="mice.html">MICE</a><a href="index.html#lokasi">Lokasi</a></div><div class="footer-col"><h3>WN Cafe</h3><a href="tel:0281642333">(0281) 642333</a><a target="_blank" rel="noopener" href="https://wa.me/6281395075858">0813-9507-5858</a><a href="mailto:info@wisataniagahotel.com">info@wisataniagahotel.com</a></div><div class="footer-col"><h3>Social</h3><a target="_blank" rel="noopener" href="https://www.instagram.com/wisataniagahotel?igsh=YXFkb3g4OTduOTZk">Instagram</a><a target="_blank" rel="noopener" href="https://www.facebook.com/share/18c9C1SMeD/">Facebook</a><a target="_blank" rel="noopener" href="https://www.tiktok.com/@wisataniaga.hotel">TikTok</a></div></div><div class="footer-bottom"><span>© 2026 Wisata Niaga Hotel. All Rights Reserved.</span><span>WN Cafe · Buka 24 Jam</span></div></div></footer>
+<a class="mobile-book" target="_blank" rel="noopener" href="https://wa.me/6281395075858?text=Halo%20WN%20Cafe%2C%20saya%20ingin%20bertanya.">Hubungi WN Cafe</a>
+<script src="js/script.js" defer></script>
 </body>
 </html>

@@ -1,322 +1,157 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-<link rel="canonical" href="https://wisataniagahotel.com/" />
-<meta name="description" content="Wisata Niaga Hotel Purwokerto - Penginapan nyaman di pusat kota. Booking langsung harga terbaik.">
-<meta name="keywords" content="hotel purwokerto, penginapan purwokerto, wisata niaga hotel, hotel banyumas">
-<meta name="geo.region" content="ID-JT" />
-<meta name="geo.placename" content="Purwokerto, Banyumas" />
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wisata Niaga Hotel - Purwokerto</title>
-
-<!-- CSS EXTERNAL -->
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Hotel",
-  "name": "Wisata Niaga Hotel",
-  "url": "https://wisataniagahotel.com",
-  "telephone": "+62-0281-642-333",
-  "image": "https://wisataniagahotel.com/images/hero.jpg",
-  "address": {
-    "@type": "PostalAddress",
-    "postalCode": "53116",
-    "addressLocality": "Purwokerto",
-    "addressRegion": "Banyumas",
-    "addressCountry": "ID"
-  }
-}
-</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wisata Niaga Hotel Purwokerto | Nyaman di Pusat Kota</title>
+  <meta name="description" content="Wisata Niaga Hotel Purwokerto - penginapan nyaman di pusat kota sejak 2004. Pilihan kamar, WN Cafe 24 jam, MICE, dan reservasi langsung via WhatsApp.">
+  <meta name="theme-color" content="#0a3b31">
+  <link rel="canonical" href="https://wisataniagahotel.com/">
+  <link rel="icon" href="images/favicon-32.png" sizes="32x32">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Hotel","name":"Wisata Niaga Hotel","url":"https://wisataniagahotel.com","telephone":"+62-281-642333","image":"https://wisataniagahotel.com/images/hero.jpg","address":{"@type":"PostalAddress","streetAddress":"Jl. Merdeka No. 5","postalCode":"53116","addressLocality":"Purwokerto","addressRegion":"Jawa Tengah","addressCountry":"ID"}}
+  </script>
 </head>
 <body>
-
-<!-- HEADER -->
-<header style="background:#fff; box-shadow:0 2px 5px rgba(0,0,0,0.1); padding:15px 20px; position:sticky; top:0; z-index:999;">
-  <div style="max-width:1200px; margin:auto; display:flex; align-items:center; justify-content:space-between;">
-
-    <!-- LOGO -->
-    <a href="index.html">
-      <img src="images/logo-wisataniaga.png" alt="Wisata Niaga Hotel" style="max-height:55px;">
-    </a>
-
-    <!-- TOMBOL HAMBURGER - MUNCUL DI HP -->
-    <div class="menu-toggle" onclick="toggleMenu()" style="display:none; font-size:28px; color:#0a7a2f; cursor:pointer;">
-      <i class="fas fa-bars"></i>
-    </div>
-
-    <!-- MENU NAVIGASI -->
-    <nav id="navbar">
-      <a href="index.html">Beranda</a>
-      <a href="index.html#kamar">Kamar</a>
+<a class="skip-link" href="#main">Lewati ke konten</a>
+<div class="top-strip"><div class="container"><span>Jl. Merdeka No. 5, Kranji, Purwokerto Timur</span><span>Reservasi 24 jam · <a href="tel:0281642333">(0281) 642333</a></span></div></div>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html" aria-label="Wisata Niaga Hotel - Beranda"><img src="images/logo-wisataniaga.png" alt="Wisata Niaga Hotel"></a>
+    <button class="nav-toggle" type="button" aria-label="Buka menu" aria-controls="main-nav" aria-expanded="false"><span></span></button>
+    <nav class="nav" id="main-nav" aria-label="Navigasi utama">
+      <a href="index.html" aria-current="page">Beranda</a>
+      <a href="#kamar">Kamar</a>
       <a href="mice.html">MICE</a>
-      <a href="cafe.html">CAFE</a>
-      <a href="index.html#fasilitas">Fasilitas</a>
-      <a href="index.html#lokasi">Lokasi</a>
-      <a href="index.html#kontak">Kontak</a>
+      <a href="cafe.html">WN Cafe</a>
+      <a href="#fasilitas">Fasilitas</a>
+      <a href="#lokasi">Lokasi</a>
+      <a class="nav-cta" href="#booking">Booking kamar</a>
     </nav>
   </div>
 </header>
 
-<style>
-  /* STYLE MENU DESKTOP */
-  #navbar { display:flex; gap:25px; }
-  #navbar a { color:#333; text-decoration:none; font-weight:600; font-size:15px; transition:0.3s; padding:5px 0; }
-  #navbar a:hover { color:#0a7a2f; }
-  #navbar a.active { color:#0a7a2f; border-bottom:2px solid #0a7a2f; } /* MENU AKTIF */
-
-  /* STYLE MENU HP */
-  @media (max-width: 992px) {
-   .menu-toggle { display:block!important; } /* Tampilkan 3 garis */
-
-    #navbar {
-      display:none; /* Sembunyikan dulu */
-      flex-direction:column;
-      position:absolute;
-      top:85px; /* Dibawah header */
-      left:0;
-      width:100%;
-      background:#fff;
-      box-shadow:0 4px 10px rgba(0,0,0,0.1);
-      padding:10px 0;
-      text-align:center;
-      animation: slideDown 0.3s ease;
-    }
-    #navbar.active { display:flex; } /* Muncul kalau diklik */
-    #navbar a { padding:14px 0; border-bottom:1px solid #f0f0f0; }
-    #navbar a.active { border-bottom:1px solid #0a7a2f; background:#f0fff4; } /* MENU AKTIF DI HP */
-    #navbar a:last-child { border-bottom:none; }
-  }
-
-  @keyframes slideDown {
-    from { opacity:0; transform: translateY(-10px); }
-    to { opacity:1; transform: translateY(0); }
-  }
-</style>
-
-<script>
-  function toggleMenu() {
-    document.getElementById("navbar").classList.toggle("active");
-  }
-  function closeMenu() {
-    document.getElementById("navbar").classList.remove("active");
-  }
-
-  // 1. AUTO ACTIVE MENU BERDASARKAN HALAMAN
-  document.addEventListener('DOMContentLoaded', function() {
-    const links = document.querySelectorAll('#navbar a');
-    const currentUrl = window.location.pathname.split('/').pop(); // ambil nama file: index.html
-
-    links.forEach(link => {
-      const linkUrl = link.getAttribute('href').split('/').pop().split('#')[0]; // ambil nama file dari href
-      if (linkUrl === currentUrl || (currentUrl === '' && linkUrl === 'index.html')) {
-        link.classList.add('active');
-      }
-      // Tambah onclick untuk close menu di HP
-      link.setAttribute('onclick', 'closeMenu()');
-    });
-  });
-
-  // 2. TUTUP MENU KALAU KLIK DI LUAR
-  document.addEventListener('click', function(event) {
-    const navbar = document.getElementById('navbar');
-    const toggle = document.querySelector('.menu-toggle');
-    if (!navbar.contains(event.target) &&!toggle.contains(event.target)) {
-      navbar.classList.remove('active');
-    }
-  });
-</script>
-
-<!-- HERO -->
-<section id="beranda" style="background:url('images/hero.jpg') center/cover no-repeat; padding:120px 20px; color:#fff; text-align:center; position:relative;">
-  <div style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5);"></div>
-  <div style="max-width:900px; margin:auto; position:relative; z-index:1;">
-    <h1 style="font-size:48px; font-weight:800; margin-bottom:20px;">WISATA NIAGA HOTEL</h1>
-    <p style="font-size:17px; line-height:1.8; margin-bottom:30px; max-width:700px; margin-left:auto; margin-right:auto;">
-      Berdiri sejak tahun 2004, Wisata Niaga Hotel menawarkan kenyamanan setara hotel berbintang dengan harga yang ramah.
-	</p>
-    <a href="https://wa.me/6282256795679?text=Halo%20Wisata%20Niaga%20Hotel%2C%20saya%20mau%20booking%20kamar." 
-       target="_blank" style="display:inline-block; background:#0a7a2f; color:#fff; padding:14px 35px; border-radius:8px; text-decoration:none; font-weight:700; font-size:16px;">
-       <i class="fab fa-whatsapp"></i> Booking via WhatsApp
-    </a>
-  </div>
-</section>
-
-<!-- PILIHAN KAMAR -->
-<section id="kamar" style="padding:60px 20px; background:#f8f8f8;">
-  <div style="max-width:1200px; margin:auto;">
-    <h2 style="text-align:center; color:#0a7a2f; font-size:32px; margin-bottom:40px; font-weight:700;">Pilihan Kamar Kami</h2>
-    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:30px;">
-      
-      <div class="room-card">
-        <img src="images/kamar-family.jpg" alt="Family Room 4" style="width:100%; height:220px; object-fit:cover;">
-        <div style="padding:25px; flex:1;"><h3 style="color:#0a7a2f; font-size:20px; margin:0 0 5px;">FAMILY ROOM 4</h3><p style="color:#d4a017; font-size:14px; margin:0 0 15px; font-weight:600;">(Include Breakfast 4 Pax)</p><p style="font-size:14px; color:#555;">King & Queen Bed, Luas 36m², Smart TV, AC</p></div>
-        <div style="padding:0 25px 25px;"><button onclick="openPopup('popup-family')" style="width:100%; background:#0a7a2f; color:#fff; padding:12px; border:none; border-radius:8px; font-weight:700; cursor:pointer;">Lihat Detail</button></div>
-      </div>
-
-      <div class="room-card">
-        <img src="images/kamar-junior1.jpg" alt="Junior Suite 1" style="width:100%; height:220px; object-fit:cover;">
-        <div style="padding:25px; flex:1;"><h3 style="color:#0a7a2f; font-size:20px; margin:0 0 5px;">JUNIOR SUITE 1</h3><p style="color:#d4a017; font-size:14px; margin:0 0 15px; font-weight:600;">(Include Breakfast 2 Pax)</p><p style="font-size:14px; color:#555;">King Bed, Luas 34m², Sofa, Smart TV</p></div>
-        <div style="padding:0 25px 25px;"><button onclick="openPopup('popup-junior1')" style="width:100%; background:#0a7a2f; color:#fff; padding:12px; border:none; border-radius:8px; font-weight:700; cursor:pointer;">Lihat Detail</button></div>
-      </div>
-
-      <div class="room-card">
-        <img src="images/kamar-junior2.jpg" alt="Junior Suite 2" style="width:100%; height:220px; object-fit:cover;">
-        <div style="padding:25px; flex:1;"><h3 style="color:#0a7a2f; font-size:20px; margin:0 0 5px;">JUNIOR SUITE 2</h3><p style="color:#d4a017; font-size:14px; margin:0 0 15px; font-weight:600;">(Include Breakfast 2 Pax)</p><p style="font-size:14px; color:#555;">King Bed, Luas 36m², Sofa, Dressing Table</p></div>
-        <div style="padding:0 25px 25px;"><button onclick="openPopup('popup-junior2')" style="width:100%; background:#0a7a2f; color:#fff; padding:12px; border:none; border-radius:8px; font-weight:700; cursor:pointer;">Lihat Detail</button></div>
-      </div>
-
-      <div class="room-card">
-        <img src="images/kamar-wnsuite.jpg" alt="WN Suite 1" style="width:100%; height:220px; object-fit:cover;">
-        <div style="padding:25px; flex:1;"><h3 style="color:#0a7a2f; font-size:20px; margin:0 0 5px;">WN SUITE 1</h3><p style="color:#d4a017; font-size:14px; margin:0 0 15px; font-weight:600;">(Include Breakfast 2 Pax)</p><p style="font-size:14px; color:#555;">Super King Bed, 2 Smart TV, 3 AC</p></div>
-        <div style="padding:0 25px 25px;"><button onclick="openPopup('popup-wnsuite')" style="width:100%; background:#0a7a2f; color:#fff; padding:12px; border:none; border-radius:8px; font-weight:700; cursor:pointer;">Lihat Detail</button></div>
-      </div>
-
-      <div class="room-card">
-        <img src="images/kamar-wnsuite2.jpg" alt="WN Suite 2" style="width:100%; height:220px; object-fit:cover;">
-        <div style="padding:25px; flex:1;"><h3 style="color:#0a7a2f; font-size:20px; margin:0 0 5px;">WN SUITE 2</h3><p style="color:#d4a017; font-size:14px; margin:0 0 15px; font-weight:600;">(Include Breakfast 2 Pax)</p><p style="font-size:14px; color:#555;">Super King Bed, Luas 55m², Whirlpool, Kitchenette</p></div>
-        <div style="padding:0 25px 25px;"><button onclick="openPopup('popup-wnsuite2')" style="width:100%; background:#0a7a2f; color:#fff; padding:12px; border:none; border-radius:8px; font-weight:700; cursor:pointer;">Lihat Detail</button></div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- FASILITAS -->
-<section id="fasilitas" style="padding:60px 20px; background:#fff;">
-  <div style="max-width:1000px; margin:auto;">
-    <h2 style="text-align:center; color:#0a7a2f; font-size:32px; margin-bottom:40px; font-weight:700;">Fasilitas Kamar</h2>
-    <div style="display:grid; grid-template-columns:repeat(4, 1fr); gap:15px;">
-      <div style="display:flex; align-items:center; gap:10px; background:#f5f5f5; padding:14px 18px; border-radius:8px; font-size:14px; font-weight:600; color:#333;"><span>🏨</span> 198 Kamar</div>
-      <div style="display:flex; align-items:center; gap:10px; background:#f5f5f5; padding:14px 18px; border-radius:8px; font-size:14px; font-weight:600; color:#333;"><span>☕</span> WN Cafe</div>
-      <div style="display:flex; align-items:center; gap:10px; background:#f5f5f5; padding:14px 18px; border-radius:8px; font-size:14px; font-weight:600; color:#333;"><span>👥</span> Meeting Room</div>
-      <div style="display:flex; align-items:center; gap:10px; background:#f5f5f5; padding:14px 18px; border-radius:8px; font-size:14px; font-weight:600; color:#333;"><span>🌿</span> Kopi Arasta</div>
-      <div style="display:flex; align-items:center; gap:10px; background:#f5f5f5; padding:14px 18px; border-radius:8px; font-size:14px; font-weight:600; color:#333;"><span>💻</span> Co-Working Space</div>
-      <div style="display:flex; align-items:center; gap:10px; background:#f5f5f5; padding:14px 18px; border-radius:8px; font-size:14px; font-weight:600; color:#333;"><span>🚗</span> Parkir & Basement</div>
-      <div style="display:flex; align-items:center; gap:10px; background:#f5f5f5; padding:14px 18px; border-radius:8px; font-size:14px; font-weight:600; color:#333;"><span>📶</span> Wi-fi</div>
-      <div style="display:flex; align-items:center; gap:10px; background:#f5f5f5; padding:14px 18px; border-radius:8px; font-size:14px; font-weight:600; color:#333;"><span>🛎️</span> 24 Jam Room Service</div>
-      <div style="display:flex; align-items:center; gap:10px; background:#f5f5f5; padding:14px 18px; border-radius:8px; font-size:14px; font-weight:600; color:#333;"><span>👨‍💼</span> 24 Jam Resepsionis</div>
-      <div style="display:flex; align-items:center; gap:10px; background:#f5f5f5; padding:14px 18px; border-radius:8px; font-size:14px; font-weight:600; color:#333;"><span>🛡️</span> 24 Jam Security</div>
-    </div>
-  </div>
-</section>
-
-<!-- LOKASI -->
-<section id="lokasi" style="padding:60px 20px; background:#f8f8f8;">
-  <div style="max-width:1200px; margin:auto; display:flex; align-items:center; gap:40px; flex-wrap:wrap;">
-    <div style="flex:1; min-width:300px;">
-      <h2 style="color:#0a7a2f; font-size:32px; margin-bottom:20px; font-weight:700;">Lokasi Kami</h2>
-      <p style="color:#444; font-size:16px; line-height:1.8; margin-bottom:20px;">
-        Berlokasi strategis di pusat kota, kami menyediakan akses terdekat ke pusat bisnis, tempat wisata keluarga, dan area perbelanjaan.
-      </p>
-      <a href="https://maps.google.com/?q=Wisata+Niaga+Hotel+Purwokerto" target="_blank" 
-         style="display:inline-block; background:#0a7a2f; color:#fff; padding:12px 25px; border-radius:8px; text-decoration:none; font-weight:700;">Lihat di Google Maps</a>
-    </div>
-    <div style="flex:1; min-width:300px;">
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.361108291931!2d109.23670399999!3d-7.4252298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655e8838fc674f%3A0xc37196ebd9e1387b!2sWisata%20Niaga%20Hotel!5e0!3m2!1sen!2sid!4v1784029797541!5m2!1sen!2sid" 
-        width="100%" height="350" style="border:0; border-radius:12px;" allowfullscreen loading="lazy">
-      </iframe>
-    </div>
-  </div>
-</section>
-
-<!-- POPUP KAMAR -->
-<div id="popup-family" class="room-popup"><div class="room-popup-content"><span class="close-btn" onclick="closePopup('popup-family')">&times;</span><img src="images/kamar-family.jpg" style="width:100%; height:250px; object-fit:cover; border-radius:12px 12px 0 0;"><div style="padding:30px;"><h3 style="color:#0a7a2f; font-size:24px;">FAMILY ROOM 4</h3><p style="color:#d4a017;">(Include Breakfast 4 Pax)</p><ul style="list-style:none; padding:0; columns:2; font-size:14px; line-height:1.8;"><li>• Wardrobe</li><li>• Luggage Rack</li><li>• Safe Box</li><li>• Minibar</li><li>• Smart TV</li><li>• AC</li><li>• King & Queen Bed</li><li>• Shower Hot & Cold</li><li>• <b>Luas: 36m²</b></li><li>• <b>No Smoking</b></li></ul><a href="https://wa.me/6282256795679?text=Booking%20FAMILY%20ROOM%204" target="_blank" style="display:block; text-align:center; background:#25D366; color:#fff; padding:14px; border-radius:8px; text-decoration:none; font-weight:700; margin-top:20px;"><i class="fab fa-whatsapp"></i> Booking via WhatsApp</a></div></div></div>
-
-<div id="popup-junior1" class="room-popup"><div class="room-popup-content"><span class="close-btn" onclick="closePopup('popup-junior1')">&times;</span><img src="images/kamar-junior1.jpg" style="width:100%; height:250px; object-fit:cover; border-radius:12px 12px 0 0;"><div style="padding:30px;"><h3 style="color:#0a7a2f; font-size:24px;">JUNIOR SUITE 1</h3><p style="color:#d4a017;">(Include Breakfast 2 Pax)</p><ul style="list-style:none; padding:0; columns:2; font-size:14px; line-height:1.8;"><li>• Wardrobe</li><li>• King Bed</li><li>• Sofa</li><li>• Smart TV</li><li>• AC</li><li>• <b>Luas: 34m²</b></li><li>• <b>No Smoking</b></li></ul><a href="https://wa.me/6282256795679?text=Booking%20JUNIOR%20SUITE%201" target="_blank" style="display:block; text-align:center; background:#25D366; color:#fff; padding:14px; border-radius:8px; text-decoration:none; font-weight:700; margin-top:20px;"><i class="fab fa-whatsapp"></i> Booking via WhatsApp</a></div></div></div>
-
-<div id="popup-junior2" class="room-popup"><div class="room-popup-content"><span class="close-btn" onclick="closePopup('popup-junior2')">&times;</span><img src="images/kamar-junior2.jpg" style="width:100%; height:250px; object-fit:cover; border-radius:12px 12px 0 0;"><div style="padding:30px;"><h3 style="color:#0a7a2f; font-size:24px;">JUNIOR SUITE 2</h3><p style="color:#d4a017;">(Include Breakfast 2 Pax)</p><ul style="list-style:none; padding:0; columns:2; font-size:14px; line-height:1.8;"><li>• Wardrobe</li><li>• King Bed</li><li>• Sofa</li><li>• Dressing Table</li><li>• Smart TV</li><li>• <b>Luas: 36m²</b></li><li>• <b>No Smoking</b></li></ul><a href="https://wa.me/6282256795679?text=Booking%20JUNIOR%20SUITE%202" target="_blank" style="display:block; text-align:center; background:#25D366; color:#fff; padding:14px; border-radius:8px; text-decoration:none; font-weight:700; margin-top:20px;"><i class="fab fa-whatsapp"></i> Booking via WhatsApp</a></div></div></div>
-
-<div id="popup-wnsuite" class="room-popup"><div class="room-popup-content"><span class="close-btn" onclick="closePopup('popup-wnsuite')">&times;</span><img src="images/kamar-wnsuite.jpg" style="width:100%; height:250px; object-fit:cover; border-radius:12px 12px 0 0;"><div style="padding:30px;"><h3 style="color:#0a7a2f; font-size:24px;">WN SUITE 1</h3><p style="color:#d4a017;">(Include Breakfast 2 Pax)</p><ul style="list-style:none; padding:0; columns:2; font-size:14px; line-height:1.8;"><li>• Super King Bed</li><li>• 2 Smart TV</li><li>• 3 AC</li><li>• Mini Refrigerator</li></ul><a href="https://wa.me/6282256795679?text=Booking%20WN%20SUITE%201" target="_blank" style="display:block; text-align:center; background:#25D366; color:#fff; padding:14px; border-radius:8px; text-decoration:none; font-weight:700; margin-top:20px;"><i class="fab fa-whatsapp"></i> Booking via WhatsApp</a></div></div></div>
-
-<div id="popup-wnsuite2" class="room-popup"><div class="room-popup-content"><span class="close-btn" onclick="closePopup('popup-wnsuite2')">&times;</span><img src="images/kamar-wnsuite2.jpg" style="width:100%; height:250px; object-fit:cover; border-radius:12px 12px 0 0;"><div style="padding:30px;"><h3 style="color:#0a7a2f; font-size:24px;">WN SUITE 2</h3><p style="color:#d4a017;">(Include Breakfast 2 Pax)</p><ul style="list-style:none; padding:0; columns:2; font-size:14px; line-height:1.8;"><li>• Super King Bed</li><li>• Living Room</li><li>• Kitchenette</li><li>• Whirlpool & Shower</li><li>• <b>Luas: 55m²</b></li><li>• <b>No Smoking</b></li></ul><a href="https://wa.me/6282256795679?text=Booking%20WN%20SUITE%202" target="_blank" style="display:block; text-align:center; background:#25D366; color:#fff; padding:14px; border-radius:8px; text-decoration:none; font-weight:700; margin-top:20px;"><i class="fab fa-whatsapp"></i> Booking via WhatsApp</a></div></div></div>
-
-<!-- FOOTER -->
-<footer id="kontak" style="background:#0a7a2f; color:#fff; padding:50px 20px; text-align:center;">
-  <div style="max-width:1200px; margin:auto; display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:40px; text-align:center;">
-    <div>
-      <img src="images/logo-wisataniaga.png" style="max-height:60px; margin:0 auto 15px; background:#fff; padding:8px; border-radius:5px; display:block;">
-      <p>Jl. Merdeka No. 5<br>Kranji, Kec.Purwokerto Timur, Banyumas 53116<br>Jawa Tengah</p>
-    </div>
-    <div>
-      <h3>Hubungi & Reservasi</h3>
-      <p style="line-height:2;">
-        <a href="tel:0281642333" style="color:#fff; text-decoration:none;"><i class="fas fa-phone"></i> (0281) 642333</a><br>
-        <a href="https://wa.me/6282256795679?text=Halo%20Wisata%20Niaga%20Hotel" target="_blank" style="color:#fff; text-decoration:none;"><i class="fab fa-whatsapp"></i> 0822 5679 5679</a><br>
-        <a href="mailto:info@wisataniagahotel.com" style="color:#fff; text-decoration:none;"><i class="fas fa-envelope"></i> info@wisataniagahotel.com</a>
-      </p>
-    </div>
-    <div>
-      <h3>Ikuti Kami</h3>
-      <div style="display:flex; gap:15px; font-size:22px; justify-content:center;">
-        <a href="https://www.facebook.com/share/18c9C1SMeD/" style="color:#fff;"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.instagram.com/wisataniagahotel?igsh=YXFkb3g4OTduOTZk" style="color:#fff;"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.tiktok.com/@wisataniaga.hotel" style="color:#fff;"><i class="fab fa-tiktok"></i></a>
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <img class="hero-bg" src="images/hero.jpg" alt="Tampak depan Wisata Niaga Hotel Purwokerto">
+    <div class="container hero-content">
+      <div class="hero-kicker"><i></i> Purwokerto · Sejak 2004</div>
+      <h1 id="hero-title">Stay close.<br>Feel at ease.</h1>
+      <p>Hotel di pusat Purwokerto dengan kenyamanan yang praktis, layanan 24 jam, pilihan kamar yang lengkap, WN Cafe, serta ruang meeting untuk kebutuhan bisnis dan acara.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#booking">Cek ketersediaan</a>
+        <a class="btn btn-ghost" href="#kamar">Lihat pilihan kamar</a>
       </div>
     </div>
-  </div>
-  <div style="text-align:center; margin-top:40px; padding-top:20px; border-top:1px solid rgba(255,255,255,0.2);">© 2026 Wisata Niaga Hotel. All Rights Reserved.</div>
+  </section>
+
+  <section class="booking-shell" id="booking" aria-label="Form pertanyaan reservasi">
+    <div class="container">
+      <form class="booking-card" id="booking-form">
+        <div class="field"><label for="checkin">Check-in</label><input id="checkin" name="checkin" type="date" required></div>
+        <div class="field"><label for="checkout">Check-out</label><input id="checkout" name="checkout" type="date" required></div>
+        <div class="field"><label for="guests">Tamu</label><select id="guests" name="guests"><option>1 Tamu</option><option selected>2 Tamu</option><option>3 Tamu</option><option>4 Tamu</option><option>5+ Tamu</option></select></div>
+        <div class="field"><label for="rooms">Jumlah</label><select id="rooms" name="rooms"><option>1 Kamar</option><option>2 Kamar</option><option>3 Kamar</option><option>4+ Kamar</option></select></div>
+        <div class="field"><label for="room-type">Tipe kamar</label><select id="room-type" name="room"><option>Rekomendasikan kamar</option><option>Family Room 4</option><option>Junior Suite 1</option><option>Junior Suite 2</option><option>WN Suite 1</option><option>WN Suite 2</option></select></div>
+        <button class="btn btn-green booking-submit" type="submit">Tanya via WhatsApp</button>
+        <p class="booking-note">Form ini tidak langsung memesan kamar. Detail akan dikirim ke WhatsApp reservasi agar tim hotel dapat mengonfirmasi ketersediaan.</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="container" aria-label="Ringkasan hotel">
+    <div class="stats reveal">
+      <div class="stat"><strong>198</strong><span>Kamar</span></div>
+      <div class="stat"><strong>24/7</strong><span>Resepsionis</span></div>
+      <div class="stat"><strong>24 Jam</strong><span>WN Cafe</span></div>
+      <div class="stat"><strong>Pusat Kota</strong><span>Lokasi strategis</span></div>
+    </div>
+  </section>
+
+  <section class="section" id="kamar">
+    <div class="container">
+      <div class="section-head reveal">
+        <div><span class="eyebrow">Stay your way</span><h2 class="section-title">Pilih ruang istirahat yang paling pas.</h2></div>
+        <p class="section-lead">Dari kamar keluarga hingga suite yang lebih luas. Semua pilihan dibuat untuk pengalaman menginap yang tenang dan praktis.</p>
+      </div>
+      <div class="room-grid">
+        <article class="room-card reveal">
+          <div class="room-image"><img src="images/kamar-family.jpg" alt="Family Room 4" loading="lazy"></div>
+          <div class="room-body"><div class="room-meta"><span>4 Pax Breakfast</span><small>36 m²</small></div><h3>Family Room 4</h3><p>King & Queen Bed, Smart TV, AC, dan ruang yang nyaman untuk keluarga.</p><div class="room-actions"><button class="btn btn-outline" type="button" data-room="family">Lihat detail</button><a class="btn btn-green" target="_blank" rel="noopener" href="https://wa.me/6282256795679?text=Halo%20Wisata%20Niaga%20Hotel%2C%20saya%20ingin%20menanyakan%20Family%20Room%204.">Tanya kamar</a></div></div>
+        </article>
+        <article class="room-card reveal">
+          <div class="room-image"><img src="images/kamar-junior1.jpg" alt="Junior Suite 1" loading="lazy"></div>
+          <div class="room-body"><div class="room-meta"><span>2 Pax Breakfast</span><small>34 m²</small></div><h3>Junior Suite 1</h3><p>King Bed, sofa, Smart TV, dan layout nyaman untuk perjalanan bisnis maupun leisure.</p><div class="room-actions"><button class="btn btn-outline" type="button" data-room="junior1">Lihat detail</button><a class="btn btn-green" target="_blank" rel="noopener" href="https://wa.me/6282256795679?text=Halo%20Wisata%20Niaga%20Hotel%2C%20saya%20ingin%20menanyakan%20Junior%20Suite%201.">Tanya kamar</a></div></div>
+        </article>
+        <article class="room-card reveal">
+          <div class="room-image"><img src="images/kamar-junior2.jpg" alt="Junior Suite 2" loading="lazy"></div>
+          <div class="room-body"><div class="room-meta"><span>2 Pax Breakfast</span><small>36 m²</small></div><h3>Junior Suite 2</h3><p>King Bed, sofa, dressing table, dan suasana yang lebih lapang untuk beristirahat.</p><div class="room-actions"><button class="btn btn-outline" type="button" data-room="junior2">Lihat detail</button><a class="btn btn-green" target="_blank" rel="noopener" href="https://wa.me/6282256795679?text=Halo%20Wisata%20Niaga%20Hotel%2C%20saya%20ingin%20menanyakan%20Junior%20Suite%202.">Tanya kamar</a></div></div>
+        </article>
+        <article class="room-card reveal">
+          <div class="room-image"><img src="images/kamar-wnsuite.jpg" alt="WN Suite 1" loading="lazy"></div>
+          <div class="room-body"><div class="room-meta"><span>2 Pax Breakfast</span><small>Suite</small></div><h3>WN Suite 1</h3><p>Super King Bed, 2 Smart TV, 3 AC, dan mini refrigerator untuk pengalaman menginap yang lebih lengkap.</p><div class="room-actions"><button class="btn btn-outline" type="button" data-room="wnsuite1">Lihat detail</button><a class="btn btn-green" target="_blank" rel="noopener" href="https://wa.me/6282256795679?text=Halo%20Wisata%20Niaga%20Hotel%2C%20saya%20ingin%20menanyakan%20WN%20Suite%201.">Tanya kamar</a></div></div>
+        </article>
+        <article class="room-card reveal">
+          <div class="room-image"><img src="images/kamar-wnsuite2.jpg" alt="WN Suite 2" loading="lazy"></div>
+          <div class="room-body"><div class="room-meta"><span>2 Pax Breakfast</span><small>55 m²</small></div><h3>WN Suite 2</h3><p>Super King Bed, living room, kitchenette, serta whirlpool & shower dalam ruang 55 m².</p><div class="room-actions"><button class="btn btn-outline" type="button" data-room="wnsuite2">Lihat detail</button><a class="btn btn-green" target="_blank" rel="noopener" href="https://wa.me/6282256795679?text=Halo%20Wisata%20Niaga%20Hotel%2C%20saya%20ingin%20menanyakan%20WN%20Suite%202.">Tanya kamar</a></div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-head reveal"><div><span class="eyebrow">More than a stay</span><h2 class="section-title">Satu hotel, beberapa pengalaman.</h2></div><p class="section-lead">Makan kapan saja, bertemu dengan nyaman, dan tetap dekat dengan pusat aktivitas Purwokerto.</p></div>
+      <div class="experience-grid">
+        <article class="experience-card reveal"><img src="images/cafe.jpg" alt="WN Cafe" loading="lazy"><div class="experience-content"><span>Dining · 24 Jam</span><h3>WN Cafe</h3><p>Breakfast buffet pukul 06.00-10.00, lalu menu a la carte Indonesia, Asia, Western, pizza, coffee, dan lainnya.</p><a class="experience-link" href="cafe.html">Explore WN Cafe →</a></div></article>
+        <article class="experience-card small reveal"><img src="images/meeting-room.jpg" alt="Meeting room Wisata Niaga Hotel" loading="lazy"><div class="experience-content"><span>Business & Event</span><h3>MICE</h3><p>Ruang meeting fleksibel hingga Merdeka Hall untuk 200 pax.</p><a class="experience-link" href="mice.html">Lihat MICE →</a></div></article>
+        <article class="experience-card small reveal"><img src="images/hero.jpg" alt="Lokasi Wisata Niaga Hotel" loading="lazy"><div class="experience-content"><span>Central Purwokerto</span><h3>Di pusat kota</h3><p>Akses dekat ke pusat bisnis, area perbelanjaan, dan destinasi keluarga.</p><a class="experience-link" href="#lokasi">Lihat lokasi →</a></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="fasilitas">
+    <div class="container">
+      <div class="section-head reveal"><div><span class="eyebrow">Hotel essentials</span><h2 class="section-title">Fasilitas yang mendukung perjalananmu.</h2></div><p class="section-lead">Layanan utama tersedia untuk kebutuhan menginap, bekerja, makan, maupun mengadakan pertemuan.</p></div>
+      <div class="facility-grid">
+        <div class="facility reveal"><span class="icon">198</span><strong>198 Kamar</strong><small>Pilihan akomodasi</small></div>
+        <div class="facility reveal"><span class="icon">24H</span><strong>WN Cafe</strong><small>Buka 24 jam</small></div>
+        <div class="facility reveal"><span class="icon">MICE</span><strong>Meeting Room</strong><small>Untuk bisnis & acara</small></div>
+        <div class="facility reveal"><span class="icon">KA</span><strong>Kopi Arasta</strong><small>Area tambahan hotel</small></div>
+        <div class="facility reveal"><span class="icon">WORK</span><strong>Co-Working Space</strong><small>Ruang bekerja</small></div>
+        <div class="facility reveal"><span class="icon">P</span><strong>Parkir & Basement</strong><small>Akses kendaraan</small></div>
+        <div class="facility reveal"><span class="icon">WiFi</span><strong>Wi-Fi</strong><small>Koneksi hotel</small></div>
+        <div class="facility reveal"><span class="icon">24H</span><strong>Room Service</strong><small>Layanan 24 jam</small></div>
+        <div class="facility reveal"><span class="icon">24H</span><strong>Resepsionis</strong><small>Siap 24 jam</small></div>
+        <div class="facility reveal"><span class="icon">SEC</span><strong>Security</strong><small>Pengamanan 24 jam</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft" id="lokasi">
+    <div class="container">
+      <div class="location-card reveal">
+        <div class="location-copy"><span class="eyebrow">Location</span><h2 class="section-title" style="font-size:2.6rem">Tinggal dekat pusat aktivitas.</h2><p class="section-lead">Berlokasi strategis di pusat Purwokerto untuk akses ke pusat bisnis, tempat wisata keluarga, dan area perbelanjaan.</p><address>Jl. Merdeka No. 5<br>Kranji, Kec. Purwokerto Timur<br>Banyumas 53116, Jawa Tengah</address><a class="btn btn-green" target="_blank" rel="noopener" href="https://maps.google.com/?q=Wisata+Niaga+Hotel+Purwokerto">Buka Google Maps</a></div>
+        <div class="location-map"><iframe title="Peta Wisata Niaga Hotel" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.361108291931!2d109.23670399999!3d-7.4252298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655e8838fc674f%3A0xc37196ebd9e1387b!2sWisata%20Niaga%20Hotel!5e0!3m2!1sen!2sid!4v1784029797541!5m2!1sen!2sid"></iframe></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container"><div class="cta-panel reveal"><div><h2>Ready for your next stay in Purwokerto?</h2><p>Tanyakan ketersediaan kamar langsung ke tim reservasi Wisata Niaga Hotel.</p></div><div class="cta-actions"><a class="btn btn-primary" target="_blank" rel="noopener" href="https://wa.me/6282256795679?text=Halo%20Wisata%20Niaga%20Hotel%2C%20saya%20ingin%20booking%20kamar.">WhatsApp reservasi</a><a class="btn btn-ghost" href="tel:0281642333">Telepon hotel</a></div></div></div>
+  </section>
+</main>
+
+<dialog class="dialog" id="room-dialog" aria-label="Detail kamar">
+  <div class="dialog-grid"><div class="dialog-image"><img data-dialog-image src="images/kamar-family.jpg" alt=""></div><div class="dialog-body"><button class="dialog-close" type="button" aria-label="Tutup" data-dialog-close>×</button><h2 data-dialog-title>Detail kamar</h2><p class="subtitle" data-dialog-subtitle></p><div class="dialog-features" data-dialog-features></div><div class="dialog-actions"><a class="btn btn-green btn-wide" target="_blank" rel="noopener" data-dialog-book href="#">Tanya via WhatsApp</a><button class="btn btn-outline btn-wide" type="button" data-dialog-close>Tutup</button></div></div></div>
+</dialog>
+
+<footer class="site-footer">
+  <div class="container"><div class="footer-grid"><div class="footer-brand"><img src="images/logo-wisataniaga.png" alt="Wisata Niaga Hotel"><p>Hotel di pusat Purwokerto sejak 2004. Menghadirkan akomodasi, WN Cafe, fasilitas meeting, dan layanan hotel 24 jam.</p></div><div class="footer-col"><h3>Explore</h3><a href="#kamar">Kamar</a><a href="mice.html">MICE</a><a href="cafe.html">WN Cafe</a><a href="#fasilitas">Fasilitas</a></div><div class="footer-col"><h3>Kontak</h3><a href="tel:0281642333">(0281) 642333</a><a target="_blank" rel="noopener" href="https://wa.me/6282256795679">0822 5679 5679</a><a href="mailto:info@wisataniagahotel.com">info@wisataniagahotel.com</a></div><div class="footer-col"><h3>Social</h3><a target="_blank" rel="noopener" href="https://www.instagram.com/wisataniagahotel?igsh=YXFkb3g4OTduOTZk">Instagram</a><a target="_blank" rel="noopener" href="https://www.facebook.com/share/18c9C1SMeD/">Facebook</a><a target="_blank" rel="noopener" href="https://www.tiktok.com/@wisataniaga.hotel">TikTok</a></div></div><div class="footer-bottom"><span>© 2026 Wisata Niaga Hotel. All Rights Reserved.</span><span>Jl. Merdeka No. 5, Purwokerto</span></div></div>
 </footer>
-
-<!-- SCRIPT -->
-<script>
-function openPopup(id) { 
-  document.getElementById(id).classList.add('active'); 
-  document.body.style.overflow='hidden'; 
-}
-function closePopup(id) { 
-  document.getElementById(id).classList.remove('active'); 
-  document.body.style.overflow='auto'; 
-}
-window.onclick = function(event) { 
-  if (event.target.classList.contains('room-popup')) { 
-    event.target.classList.remove('active'); 
-    document.body.style.overflow='auto'; 
-  }
-}
-</script>
-<!-- TOMBOL WHATSAPP MELAYANG -->
-<a href="https://wa.me/6282256795679?text=Halo%20Wisata%20Niaga%20Hotel%2C%20saya%20mau%20tanya%20kamar%20dan%20reservasi%20ya" 
-   target="_blank" 
-   class="wa-float"
-   aria-label="Chat WhatsApp Wisata Niaga Hotel">
-  <i class="fab fa-whatsapp"></i>
-</a>
-
-<style>
-.wa-float {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 25px;
-  right: 25px;
-  background-color: #25D366;
-  color: #FFF;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 32px;
-  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-  animation: pulse 2s infinite;
-}
-.wa-float:hover { background-color: #20b954; transform: scale(1.1); }
-@keyframes pulse {
- 0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
- 70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
- 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
-}
-@media (max-width: 768px) {
-  .wa-float { width: 55px; height: 55px; font-size: 28px; bottom: 20px; right: 20px; }
-}
-</style>
+<a class="mobile-book" target="_blank" rel="noopener" href="https://wa.me/6282256795679?text=Halo%20Wisata%20Niaga%20Hotel%2C%20saya%20ingin%20booking%20kamar.">Booking via WhatsApp</a>
+<script src="js/script.js" defer></script>
 </body>
 </html>
